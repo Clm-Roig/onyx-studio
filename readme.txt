@@ -19,6 +19,7 @@ Then choose embedded forms and select naked form. In the generated form code get
 the form ACTION attribute and use it as your mailchimp url. Open the main.js file located
 in the template's "js" folder and look for this line of code: 
 
+
 var cfg = {
     scrollDuration : 800, // smoothscroll duration
     mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
