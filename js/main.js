@@ -8,7 +8,7 @@
     "use strict";
     
     var cfg = {
-        scrollDuration : 800, // smoothscroll duration
+        scrollDuration : 200, // smoothscroll duration
         mailChimpURL   : ''   // mailchimp url
     },
 
@@ -34,7 +34,7 @@
             // will first fade out the loading animation 
             $("#loader").fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
-                $("#preloader").delay(300).fadeOut("slow");
+                $("#preloader").delay(150).fadeOut("slow");
             }); 
             
             // for hero content animations 
