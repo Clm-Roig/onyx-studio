@@ -4,8 +4,8 @@
 
     <!--- basic page needs
     ================================================== -->
-    <meta charset="utf-8">
-    <title>Onyx Studio</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+	<title>Onyx Studio</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+	
+	<!-- Icons
+    ================================================== -->	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- script
     ================================================== -->
@@ -51,9 +55,9 @@
                 <h3>Onyx Studio</h3>
                 
                 <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Accueil</a></li>
+                    <li><a class="smoothscroll"  href="#presentation" title="about">Présentation</a></li>
+                    <li><a class="smoothscroll"  href="#prestations" title="services">Prestations</a></li>
                     <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
                 </ul>
@@ -62,7 +66,7 @@
     
                 <ul class="header-nav__social">
                     <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                        <a href="#0"><i class="fab fa-fa-facebook"></i></a>
                     </li>
                     <li>
                         <a href="#0"><i class="fab fa-twitter"></i></a>
@@ -111,28 +115,28 @@
         </div> <!-- end home-content -->
 
         <ul class="home-sidelinks">
-            <li><a class="smoothscroll" href="#about">About<span>who we are</span></a></li>
-            <li><a class="smoothscroll" href="#services">Services<span>what we do</span></a></li>
-            <li><a  class="smoothscroll" href="#contact">Contact<span>get in touch</span></a></li>
+            <li><a class="smoothscroll" href="#presentation">Présentation<span>Onyx Studio</span></a></li>
+            <li>
+				<a class="smoothscroll" href="#prestations">
+					Prestations
+					<span>
+						Réamping, mixage, mastering, 
+						<br>programmation batterie virtuelle					
+					</span>
+				</a>
+			</li>
+            <li><a  class="smoothscroll" href="#contact">Contact<span></span></a></li>
         </ul> <!-- end home-sidelinks -->
 
         <ul class="home-social">
-            <li class="home-social-title">Follow Us</li>
+            <li class="home-social-title">Suivez-moi</li>
             <li><a href="#0">
                 <i class="fab fa-facebook"></i>
                 <span class="home-social-text">Facebook</span>
             </a></li>
-            <li><a href="#0">
-                <i class="fab fa-twitter"></i>
-                <span class="home-social-text">Twitter</span>
-            </a></li>
-            <li><a href="#0">
-                <i class="fab fa-linkedin"></i>
-                <span class="home-social-text">LinkedIn</span>
-            </a></li>
         </ul> <!-- end home-social -->
 
-        <a href="#about" class="home-scroll smoothscroll">
+        <a href="#presentation" class="home-scroll smoothscroll">
             <span class="home-scroll__text">Scroll Down</span>
             <span class="home-scroll__icon"></span>
         </a> <!-- end home-scroll -->
@@ -140,21 +144,22 @@
     </section> <!-- end s-home -->
 
 
-    <!-- about
+    <!-- presentation
     ================================================== -->
-    <section id='about' class="s-about">
+    <section id='presentation' class="s-presentation">
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Who We Are</h3>
-                <h1 class="display-1">We are a group of design driven individuals passionate about creating beautiful UI designs.</h1>
+                <h3 class="subhead">Présentation</h3>
+                <h1 class="display-1">Bienvenue à l'Onyx Studio</h1>
             </div>
         </div> <!-- end section-header -->
 
         <div class="row" data-aos="fade-up">
             <div class="col-full">
                 <p class="lead">
-                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. 
+				Je m'appelle Clément Roig et j'ai créé ce studio dans le but de mettre mes compétences et mon expérience à disposition des groupes souhaitant obtenir un résultat professionnel pour leurs créations. Je propose différents services tels que le mixage, le réamping, la programmation de batterie virtuelle et le mastering, principalement dans le rock et le metal.
+ 
                 </p>
             </div>
         </div> <!-- end about-desc -->
@@ -168,21 +173,19 @@
 
                 <div class="col-block process__col" data-item="1" data-aos="fade-up">
                     <div class="process__text">
-                        <h4>Define</h4>
+                        <h4>Expérience</h4>
 
                         <p>
-                        Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. 
-                        Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab.
+                        J’ai été et je suis musicien dans divers groupes (Opprobre, Antropofago, Sunnudagr...) et je connais les problématiques liées au passage en studio. Je répondrai donc en toute transparence à vos questions concernant cette étape essentielle dans la construction de votre projet. 
                         </p>
                     </div>
                 </div>
                 <div class="col-block process__col" data-item="2" data-aos="fade-up">
                     <div class="process__text">
-                        <h4>Design</h4>
+                        <h4>À votre écoute</h4>
 
                         <p>
-                        Quos dolores saepe mollitia deserunt accusamus autem reprehenderit. Voluptas facere animi explicabo non quis magni recusandae. 
-                        Numquam debitis pariatur omnis facere unde. Laboriosam minus amet nesciunt est. Et saepe eos maxime tempore quasi deserunt ab.
+						À l’Onyx Studio, je m’efforce de comprendre vos besoins et vos attentes tout en mettant à votre service mon expérience pour atteindre, et même dépasser votre objectif.
                         </p>
                     </div>
                 </div>
@@ -211,17 +214,17 @@
 
         </div> <!-- end about-stats -->
 
-    </section> <!-- end s-about -->
+    </section> <!-- end s-presentation -->
 
 
-    <!-- services
+    <!-- prestations
     ================================================== -->
-    <section id='services' class="s-services light-gray">
+    <section id='prestations' class="s-prestations light-gray">
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">What We Do</h3>
-                <h1 class="display-1">We have everything you need to launch and grow a successful digital business.</h1>
+                <h3 class="subhead">Prestations</h3>
+                <h1 class="display-1">Lorem ipsum</h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -240,7 +243,7 @@
                     <i class="icon-tv"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h4">Brand Identity</h3>
+                    <h3 class="h4">Réamping</h3>
                     <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
                     Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                     Sunt suscipit voluptas ipsa in tempora esse soluta sint.
@@ -253,7 +256,7 @@
                     <i class="icon-group"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h4">Illustration</h3>
+                    <h3 class="h4">Mixage</h3>
                     <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
                     Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                     Sunt suscipit voluptas ipsa in tempora esse soluta sint.
@@ -266,7 +269,7 @@
                     <i class="icon-earth"></i>
                 </div>  
                 <div class="service-text">
-                    <h3 class="h4">Web Design</h3>
+                    <h3 class="h4">Mastering</h3>
                     <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
                     Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                     Sunt suscipit voluptas ipsa in tempora esse soluta sint.
@@ -276,13 +279,12 @@
 
             <div class="col-block service-item" data-aos="fade-up">
                 <div class="service-icon service-icon--product-strategy">
-                    <i class="icon-cube"></i>
+                    <i class="fas fa-drum"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h4">Product Strategy</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    <h3 class="h4">Programmation de batterie virtuelle</h3>
+                    <p>
+					Que l'on soit bien d'accord : une batterie virtuelle ne remplacera jamais totalement un véritable batteur. Est-ce une raison pour abandonner nos chères boîtes à rythmes ? Certainement pas ! À l’Onyx Studio, je tâcherai de faire en sorte qu’elle sonne la plus réaliste possible. Le résultat ne sera pas une simple batterie virtuelle : vous obtiendrez un batteur virtuel, avec toutes les nuances et le touché nécessaire à votre musique.
                     </p>
                 </div>
             </div>
@@ -315,7 +317,7 @@
 
         </div> <!-- end services-list -->
 
-    </section> <!-- end s-services -->
+    </section> <!-- end s-prestations -->
 
 
     <!-- works
@@ -601,7 +603,7 @@
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead subhead--light">Contact Us</h3>
+                <h3 class="subhead subhead--light">Contactez-moi</h3>
                 <h1 class="display-1 display-1--light">Get in touch and let's make something great together. Let's turn your idea on an even greater product.</h1>
             </div>
         </div> <!-- end section-header -->
@@ -610,8 +612,8 @@
 
             <div class="col-full contact-main" data-aos="fade-up">
                 <p>
-                <a href="mailto:#0" class="contact-email">hello@transcend-studio.com</a>
-                <span class="contact-number">+1 (917) 123 456  /  +1 (917) 333 987</span>
+                <a href="mailto:#0" class="contact-email">onyx-studio@protonmail.com</a>
+                <!--<span class="contact-number">+1 (917) 123 456  /  +1 (917) 333 987</span>-->
                 </p>
             </div> <!-- end contact-main -->
 
@@ -620,43 +622,36 @@
         <div class="row">
 
             <div class="col-five tab-full contact-secondary" data-aos="fade-up">
-                <h3 class="subhead subhead--light">Where To Find Us</h3>
+                <h3 class="subhead subhead--light">Où me trouver</h3>
 
                 <p class="contact-address">
-                    1600 Amphitheatre Parkway<br>
-                    Mountain View, CA<br>
-                    94043 US
+                    34090 MONTPELLIER<br>
                 </p>
             </div> <!-- end contact-secondary -->
 
             <div class="col-five tab-full contact-secondary" data-aos="fade-up">
-                <h3 class="subhead subhead--light">Follow Us</h3>
+                <h3 class="subhead subhead--light">Restons connectés</h3>
 
                 <ul class="contact-social">
                     <li>
                         <a href="#0"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
                         <a href="#0"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-dribbble"></i></a>
                     </li>
                 </ul> <!-- end contact-social -->
 
+				<!--
                 <div class="contact-subscribe">
                     <form id="mc-form" class="group mc-form" novalidate="true">
                         <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
                         <input type="submit" name="subscribe" value="Subscribe">
                         <label for="mc-email" class="subscribe-message"></label>
                     </form>
-                </div> <!-- end contact-subscribe -->
+                </div> 
+				-->
+				<!-- end contact-subscribe -->
+				
             </div> <!-- end contact-secondary -->
 
         </div> <!-- end row -->

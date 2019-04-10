@@ -2214,7 +2214,7 @@ html.no-csstransitions .home-content__main {
  * # about
  *
  * ------------------------------------------------------------------- */
-.s-about {
+.s-presentation {
   padding-top: 18rem;
   padding-bottom: 18rem;
   background-color: #ffffff;
@@ -2283,7 +2283,7 @@ html.no-csstransitions .home-content__main {
  * about
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-  .s-about {
+  .s-presentation {
     padding-top: 15rem;
     padding-bottom: 15rem;
   }
@@ -2310,7 +2310,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 800px) {
-  .s-about {
+  .s-presentation {
     padding-top: 12rem;
     padding-bottom: 12rem;
   }
@@ -2341,7 +2341,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 400px) {
-  .s-about {
+  .s-presentation {
     padding-top: 9.6rem;
   }
 
@@ -2375,7 +2375,7 @@ html.no-csstransitions .home-content__main {
  * # services
  *
  * ------------------------------------------------------------------- */
-.s-services {
+.s-prestations {
   padding-top: 18rem;
   padding-bottom: 18rem;
   color: #333333;
@@ -2407,7 +2407,7 @@ html.no-csstransitions .home-content__main {
  * services
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-  .s-services {
+  .s-prestations {
     padding-top: 15rem;
     padding-bottom: 15rem;
   }
@@ -2420,7 +2420,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 800px) {
-  .s-services {
+  .s-prestations {
     padding-top: 12rem;
     padding-bottom: 12rem;
   }
@@ -2441,7 +2441,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 400px) {
-  .s-services {
+  .s-prestations {
     padding-top: 9.6rem;
   }
 
@@ -3190,7 +3190,7 @@ html.no-csstransitions .home-content__main {
   left: 50%;
 }
 .cl-go-top::after {
-  content: "back to top";
+  content: "";
   display: inline-block;
   width: 120px;
   font-size: 1.2rem;
