@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
-	<title>Onyx Studio</title>
+	<title>Onyx Studio - Rock & metal productions</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -32,6 +32,11 @@
     ================================================== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+		
+	<!-- Data -->
+	<script src="data/productions.js">	
+	</script>
 
 </head>
 
@@ -43,7 +48,7 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="images/logo.png" alt="Homepage">
+                <img src="images/logo_with_legend.png" alt="Homepage">
             </a>
         </div> <!-- end header-logo -->
 
@@ -137,7 +142,7 @@
         </ul> <!-- end home-social -->
 
         <a href="#presentation" class="home-scroll smoothscroll">
-            <span class="home-scroll__text">Scroll Down</span>
+            <span class="home-scroll__text">En savoir plus</span>
             <span class="home-scroll__icon"></span>
         </a> <!-- end home-scroll -->
 
@@ -326,8 +331,8 @@
                 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Featured Works</h3>
-                <h1 class="display-1">These are some of our recent design projects and we are so excited to show them to you.</h1>
+                <h3 class="subhead">Références</h3>
+                <h1 class="display-1">Nous avons travaillé ensemble</h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -576,8 +581,8 @@
         <div class="row stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
                 
             <div class="col-block stats__col ">
-                <div class="stats__count">129</div>
-                <h5>Awards Received</h5>
+                <div id="ndProds" class="stats__count"></div>
+                <h5>Productions réalisées</h5>
             </div>
             <div class="col-block stats__col">
                 <div class="stats__count">1507</div>
@@ -604,7 +609,7 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead subhead--light">Contactez-moi</h3>
-                <h1 class="display-1 display-1--light">Get in touch and let's make something great together. Let's turn your idea on an even greater product.</h1>
+                <h1 class="display-1 display-1--light">Vous avez forcément tout un tas de questions en tête et c'est normal : contactez-moi et je me ferai un plaisir de discuter avec vous de votre projet !</h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -658,12 +663,19 @@
 
         <div class="row">
             <div class="col-full cl-copyright">
-                <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span> 
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<!-- 
+				<span>
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+				</span>
+				-->
+				<span>
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés | Template par <a href="https://colorlib.com" target="_blank">Colorlib</a>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</span> 
             </div>
         </div>
-
+		
         <div class="cl-go-top">
             <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
         </div>
@@ -709,7 +721,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
 
     </div> <!-- end photoSwipe background -->
-
+	
 
     <!-- preloader
     ================================================== -->
@@ -725,6 +737,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+	<!-- Data loader -->
+	<script>
+		document.getElementById("ndProds").innerHTML = os_productions.length		
+	</script>
 </body>
 
 </html>
