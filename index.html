@@ -35,8 +35,8 @@
 	
 		
 	<!-- Data -->
-	<script src="data/productions.js">	
-	</script>
+	<script src="data/productions.js"></script>
+	<script src="production_brick_template.js"></script>
 
 </head>
 
@@ -163,8 +163,7 @@
         <div class="row" data-aos="fade-up">
             <div class="col-full">
                 <p class="lead">
-				Je m'appelle Clément Roig et j'ai créé ce studio dans le but de mettre mes compétences et mon expérience à disposition des groupes souhaitant obtenir un résultat professionnel pour leurs créations. Je propose différents services tels que le mixage, le réamping, la programmation de batterie virtuelle et le mastering, principalement dans le rock et le metal.
- 
+				Je m'appelle Clément Roig et j'ai créé ce studio dans le but de mettre mes compétences et mon expérience à disposition des groupes souhaitant obtenir un résultat professionnel pour leurs créations. Je propose différents services tels que le mixage, le réamping, la programmation de batterie virtuelle ainsi que le mastering, principalement dans le rock et le metal.
                 </p>
             </div>
         </div> <!-- end about-desc -->
@@ -181,7 +180,7 @@
                         <h4>Expérience</h4>
 
                         <p>
-                        J’ai été et je suis musicien dans divers groupes (Opprobre, Antropofago, Sunnudagr...) et je connais les problématiques liées au passage en studio. Je répondrai donc en toute transparence à vos questions concernant cette étape essentielle dans la construction de votre projet. 
+                        Je suis musicien dans divers groupes (Opprobre, Antropofago, Sunnudagr...) et je connais les problématiques liées au passage en studio. Je répondrai donc en toute transparence à vos questions concernant cette étape essentielle dans la construction de votre projet. 
                         </p>
                     </div>
                 </div>
@@ -337,38 +336,8 @@
         </div> <!-- end section-header -->
 
         <div class="row masonry-wrap">
-            <div class="masonry">
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-lamp.jpg" class="thumb-link" title="Lamp" data-size="1050x700">
-                                <img src="images/portfolio/lamp.jpg" 
-                                     srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
-                            </a>
-                        </div>
-
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Lamp
-                            </h3>
-                            <p class="item-folio__cat">
-                                Web Design
-                            </p>
-                        </div>
-
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                            Project Link
-                        </a>
-
-                        <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </div>
-
-                    </div> <!-- end item-folio -->
-                </div> <!-- end masonry__brick -->
-
+            <div class="masonry" id="productionsSample">
+				
                 <div class="masonry__brick" data-aos="fade-up">
                     <div class="item-folio">
 
@@ -581,18 +550,22 @@
         <div class="row stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
                 
             <div class="col-block stats__col ">
-                <div id="ndProds" class="stats__count"></div>
+                <h5>-</h5>
+				<div id="ndProds" class="stats__count"></div>
                 <h5>Productions réalisées</h5>
             </div>
             <div class="col-block stats__col">
-                <div class="stats__count">1507</div>
-                <h5>Cups of Coffee</h5>
+                <h5>Dans</h5>
+				<div id="nbStyles" class="stats__count"></div>
+                <h5>styles différents</h5>
             </div>
             <div class="col-block stats__col">
-                <div class="stats__count">108</div>
+                <h5>-</h5>
+				<div class="stats__count">108</div>
                 <h5>Projects Completed</h5>
             </div>
             <div class="col-block stats__col">
+				<h5>-</h5>
                 <div class="stats__count">103</div>
                 <h5>Happy Clients</h5> 
             </div>
@@ -609,7 +582,7 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead subhead--light">Contactez-moi</h3>
-                <h1 class="display-1 display-1--light">Vous avez forcément tout un tas de questions en tête et c'est normal : contactez-moi et je me ferai un plaisir de discuter avec vous de votre projet !</h1>
+                <p class="contact-text">Vous avez forcément tout un tas de questions en tête et c'est normal : contactez-moi et je me ferai un plaisir de discuter avec vous de votre projet !</p>
             </div>
         </div> <!-- end section-header -->
 
@@ -670,7 +643,7 @@
 				</span>
 				-->
 				<span>
-					Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés | Template par <a href="https://colorlib.com" target="_blank">Colorlib</a>
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés | Template par <a href="https://colorlib.com" target="_blank" style="color:#fff">Colorlib</a>
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				</span> 
             </div>
@@ -739,7 +712,29 @@
 
 	<!-- Data loader -->
 	<script>
-		document.getElementById("ndProds").innerHTML = os_productions.length		
+		// CONST 
+		const nbRandomsProds = 3
+		
+		// SET VARS
+		document.getElementById("ndProds").innerHTML = os_productions.length
+		
+		let os_productions_styles = new Set()
+		os_productions.map(p => os_productions_styles.add(p.style))
+		document.getElementById("nbStyles").innerHTML = os_productions_styles.size
+		
+		let random_productions = os_productions
+			.map(x => ({ x, r: Math.random() }))
+			.sort((a, b) => a.r - b.r)
+			.map(a => a.x)
+			.slice(0, nbRandomsProds);
+		
+		let productions_sample = []
+		random_productions.forEach((prod) => {
+			productions_sample += replaceInTemplate(prod)
+		})
+				
+		document.getElementById("productionsSample").innerHTML = productions_sample
+		
 	</script>
 </body>
 

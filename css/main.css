@@ -2544,6 +2544,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__text {
+  background: #222;
   z-index: 2;
   position: absolute;
   left: 0;
@@ -2559,13 +2560,13 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__title {
-  color: #000000;
+  color: #fff;
   font-size: 1.8rem;
   margin: 0;
 }
 
 .item-folio__cat {
-  color: black;
+  color: #fff;
   font-family: "metropolis-regular", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 0;
@@ -2694,7 +2695,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 800px) {
   .s-works {
-    padding: 12rem 0 21rem;
+    padding: 12rem 0 15rem;
   }
 
   .masonry-wrap {
@@ -2709,7 +2710,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 400px) {
   .s-works {
-    padding: 9.6rem 0 21rem;
+    padding: 9.6rem 0 15rem;
   }
 
   .masonry-wrap {
@@ -2982,24 +2983,25 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-  padding-top: 21rem;
+  padding-top: 15rem;
   padding-bottom: 10.2rem;
   background-color: #111111;
   color: rgba(255, 255, 255, 0.3);
   position: relative;
 }
-.s-contact a {
-  color: #ffffff;
-  border-bottom: 1px solid transparent;
-  display: inline-block;
-}
+
 .s-contact a:hover,
 .s-contact a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+p.contact-text {
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
 .contact-main {
-  margin-top: 14.4rem;
+  margin-top: 7.2rem;
   margin-bottom: 4.8rem;
 }
 
@@ -3008,7 +3010,7 @@ html.no-csstransitions .home-content__main {
   font-family: "metropolis-light", sans-serif;
   font-size: 5.4rem;
   line-height: 1.222;
-  color: #ffffff;
+  color: #aaa;
   padding-top: 3.6rem;
   position: relative;
 }
@@ -3234,7 +3236,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-main {
-    margin-top: 13.2rem;
+    margin-top: 6.5rem;
   }
 
   .contact-email {
@@ -3324,7 +3326,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-main {
-    margin-top: 12rem;
+    margin-top: 8rem;
   }
 
   .contact-email {
@@ -3377,7 +3379,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .contact-main {
-    margin-top: 9.6rem;
+    margin-top: 4rem;
   }
 
   .contact-secondary {
