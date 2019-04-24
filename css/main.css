@@ -39,7 +39,7 @@
  *    ## about process
  *  # services
  *    ## services list
- *  # works
+ *  # references
  *    ## bricks/masonry
  *  # testimonials
  *  # stats 
@@ -2457,10 +2457,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # works
+ * # references
  *
  * ------------------------------------------------------------------- */
-.s-works {
+.s-references {
   background: #ffffff;
   padding: 9rem 0 24rem;
   position: relative;
@@ -2496,6 +2496,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__thumb img {
+  max-width: 400px;
   vertical-align: top;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -2645,7 +2646,7 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * works
+ * references
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1500px) {
   .masonry-wrap {
@@ -2678,7 +2679,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 1200px) {
-  .s-works {
+  .s-references {
     padding: 15rem 0 22.2rem;
   }
 }
@@ -2694,7 +2695,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 800px) {
-  .s-works {
+  .s-references {
     padding: 12rem 0 15rem;
   }
 
@@ -2709,7 +2710,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 400px) {
-  .s-works {
+  .s-references {
     padding: 9.6rem 0 15rem;
   }
 
