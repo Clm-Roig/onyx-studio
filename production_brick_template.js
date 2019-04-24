@@ -31,7 +31,6 @@ function replaceInTemplate(production) {
 	keys = Object.keys(production)
 	keys.map((key) => {
 		final_brick = final_brick.replace("$$"+key+"$$", production[key])
-		console.log(final_brick)
 	})
 	return final_brick
 }
