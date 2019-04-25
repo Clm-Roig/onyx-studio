@@ -1229,7 +1229,7 @@ input::-moz-focus-inner {
   color: #000000;
   letter-spacing: -0.03rem;
   margin-top: 0;
-  margin-bottom: 4.8rem;
+  margin-bottom: 3.5rem;
 }
 .display-1--light {
   color: #ffffff;
@@ -1273,7 +1273,7 @@ input::-moz-focus-inner {
 @media only screen and (max-width: 800px) {
   .display-1 {
     font-size: 4.2rem;
-    margin-bottom: 4.2rem;
+    margin-bottom: 2rem;
   }
 
   .subhead {
@@ -2511,7 +2511,7 @@ html.no-csstransitions .home-content__main {
   content: "";
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  /* position: absolute; */ /* Fix 25/04/2019: images were hidden by the next row */
   top: 0;
   left: 0;
   width: 100%;
