@@ -1,5 +1,5 @@
 // CONST 
-const nbRandomsProds = 3
+const nbRandomsProds = os_productions.length - 1
 
 // SET VARS
 document.getElementById("ndProds").innerHTML = os_productions.length

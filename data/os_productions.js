@@ -7,6 +7,8 @@ var os_productions = [
 		style: "Death Brutal",
 		logo_url: "",
 		cover_url: "images/covers/Antropofago-A_Propensity_for_Violence.png",
+		facebook_url: "https://www.facebook.com/antropofago.deathmetal",
+		youtube_url: "https://www.youtube.com/watch?v=yK160fu2cXI",
 		year: 2018
 	},
 	{
@@ -17,6 +19,8 @@ var os_productions = [
 		style: "Black Atmosphérique",
 		logo_url: "",
 		cover_url: "images/covers/Mysticisme-Rites.jpg",
+		facebook_url: "https://www.facebook.com/Mysticismeband",
+		youtube_url: "https://www.youtube.com/watch?v=RjrnN1vny2o",
 		year: 2016
 	},
 	{
@@ -27,6 +31,8 @@ var os_productions = [
 		style: "Post Black Metal",
 		logo_url: "",
 		cover_url: "images/covers/Opprobre-Le_Naufrage.jpg",
+		facebook_url: "https://www.facebook.com/opprobre",
+		youtube_url: "https://www.youtube.com/watch?v=Nn0V-FKm5KY",
 		year: 2017
 	},
 	{
@@ -37,6 +43,8 @@ var os_productions = [
 		style: "Death Black",
 		logo_url: "",
 		cover_url: "images/covers/Devolution-The_Perpetual_Motion.jpg",
+		facebook_url: "https://www.facebook.com/devolution.dbm",
+		youtube_url: "https://www.youtube.com/watch?v=3mD6pFnvNsA",
 		year: 2015
 	}
 ];
