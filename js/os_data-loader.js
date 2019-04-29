@@ -1,22 +1,29 @@
-// CONST 
-const nbRandomsProds = os_productions.length - 1
+class DataLoader {
+  constructor() {
+    // CONST 
+    this.nbRandomsProds = os_productions.length - 1
 
-// SET VARS
-document.getElementById("ndProds").innerHTML = os_productions.length
+    
+    document.getElementById("ndProds").innerHTML = os_productions.length
+    let os_productions_styles = new Set()
+    os_productions.map(p => os_productions_styles.add(p.style))
+    document.getElementById("nbStyles").innerHTML = os_productions_styles.size
 
-let os_productions_styles = new Set()
-os_productions.map(p => os_productions_styles.add(p.style))
-document.getElementById("nbStyles").innerHTML = os_productions_styles.size
+    this.loadRandomProductions()
+  }
 
-let random_productions = os_productions
-	.map(x => ({ x, r: Math.random() }))
-	.sort((a, b) => a.r - b.r)
-	.map(a => a.x)
-	.slice(0, nbRandomsProds);
+  loadRandomProductions() {
+    this.random_productions = []
+    let production_tmp = os_productions
+      .map(x => ({ x, r: Math.random() }))
+      .sort((a, b) => a.r - b.r)
+      .map(a => a.x)
+      .slice(0, this.nbRandomsProds);
+    production_tmp.forEach((prod) => {
+      this.random_productions += replaceInTemplate(prod)
+    })
+    document.getElementById("productionsSample").innerHTML = this.random_productions
+  }
+}
 
-let productions_sample = []
-random_productions.forEach((prod) => {
-	productions_sample += replaceInTemplate(prod)
-})
-
-document.getElementById("productionsSample").innerHTML = productions_sample
+os_data = new DataLoader()

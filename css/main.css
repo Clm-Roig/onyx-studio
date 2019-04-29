@@ -2366,15 +2366,53 @@ html.no-csstransitions .home-content__main {
  * ## services list
  * ------------------------------------------------------------------- */
 .services-list {
-  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .services-list .service-item {
-  margin-bottom: 1.5rem;
+  display: flex;
+  margin-bottom: 2rem;
+  min-height: 300px;
+}
+.services-list .service-item .service-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.services-list .service-item p {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding: 2rem;
+  position: relative;
+  text-align: justify;    
 }
 .services-list .service-item h3 {
+  color: #a53035;
   margin-top: 0;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1rem;
 }
+.services-list .service-item img {
+  filter: blur(0px);
+  height: 100%;
+  opacity: 0.2;
+  position: absolute;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+.services-list .service-item img:hover {
+  filter: blur(3px);
+  transition: 0.5s;
+  transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  zoom: 1.5;
+}
+
 .services-list .service-icon {
   color: #a53035;
   font-size: 4.8rem;
@@ -2405,7 +2443,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .services-list {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
   }
   .services-list .service-icon {
     font-size: 4.5rem;
@@ -2439,6 +2477,28 @@ html.no-csstransitions .home-content__main {
   background: #ffffff;
   padding: 9rem 0 12rem;
   position: relative;
+}
+
+.s-references button.shuffle_prods {
+  background-color: #a53035;
+  border: none;
+  color: #dddddd;
+  float: right;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 6rem;
+}
+
+.s-references button.shuffle_prods:hover {
+  cursor: pointer;
+  background-color: #941e23;
+}
+
+.s-references button.shuffle_prods:active {
+  transform: rotate(1000deg); 
 }
 
 
