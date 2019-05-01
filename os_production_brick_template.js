@@ -43,6 +43,10 @@ function replaceInTemplate(production) {
 				value = getFacebookLink(value)
 				final_brick = final_brick.replace("$$facebook_link$$", value)
 			}
+      else if (key == "credits"){
+        value = value.join(", ")
+        final_brick = final_brick.replace("$$credits$$", value)
+      }
 			else {
 				let regex = new RegExp('\\$\\$' + key + '\\$\\$', 'g')
 				final_brick = final_brick.replace(regex, value)	
