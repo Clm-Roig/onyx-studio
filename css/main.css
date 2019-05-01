@@ -2381,7 +2381,7 @@ html.no-csstransitions .home-content__main {
 }
 .services-list .service-item p {
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(34, 34, 34, 0.75);
   color: #ddd;
   display: flex;
   justify-content: center;
@@ -2498,7 +2498,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-references button.shuffle_prods:active {
-  transform: rotate(1000deg); 
+  transform: scale(1.2); 
 }
 
 
@@ -2596,6 +2596,27 @@ html.no-csstransitions .home-content__main {
   transition: all 0.5s ease-in-out;
 }
 
+.item-folio__credits {
+  background: #222;
+  bottom: 0;
+  color: #dddddd;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  padding: 0 3rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  transition: all 0.5s ease-in-out;
+}
+
+.item-folio__credits .credits-text {
+  font-size: 1.2rem;
+}
+
 .item-folio__title {
   color: #fff;
   font-size: 1.8rem;
@@ -2687,7 +2708,7 @@ html.no-csstransitions .home-content__main {
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.item-folio:hover .item-folio__text {
+.item-folio:hover .item-folio__text, .item-folio:hover .item-folio__credits {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translate3d(0, 0, 0);

@@ -6,6 +6,9 @@ var os_production_brick_template = `
 			<img src="$$cover_url$$" alt="$$band$$ - $$name$$ artwork"> 
 		</div> 
 
+		$$youtube_link$$
+		$$facebook_link$$
+
 		<div class="item-folio__text"> 
 			<h3 class="item-folio__title"> 
 				$$name$$
@@ -15,12 +18,12 @@ var os_production_brick_template = `
 			</p> 
 		</div> 
 
-		$$youtube_link$$
-		$$facebook_link$$
 
-		<span class="item-folio__caption"> 
-			<p></p> 
-		</span> 
+		<div class="item-folio__credits"> 
+			<span class="credits-text"> 
+				$$credits$$
+			</span> 
+		</div> 
 
 	</div> <!-- end item-folio --> 
 </div> <!-- end masonry__brick -->  
