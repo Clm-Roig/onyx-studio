@@ -1,10 +1,7 @@
-
 class DataLoader {
   constructor() {
     // CONST 
     this.nbRandomsProds = 3
-    
-
     this.loadRandomProductions()
   }
 

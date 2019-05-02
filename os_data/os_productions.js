@@ -1,4 +1,4 @@
-var os_productions = [
+const os_productions = [
     {
         name: "A Propensity for Violence",
         band: "Antropofago",
