@@ -396,6 +396,11 @@ dd {
     margin: 0 0 0 2rem;
 }
 
+/* Custom Onyx Studio list */
+ul.os-list {
+    list-style-type: none;
+}
+
 
 /* ------------------------------------------------------------------- 
 * ## responsive video container
@@ -2351,10 +2356,10 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
-* # services
+* # dark-section
 *
 * ------------------------------------------------------------------- */
-.s-prestations {
+.s-dark-section {
     padding-top: 9rem;
     padding-bottom: 9rem;
     color: #333333;
@@ -2363,23 +2368,23 @@ html.no-csstransitions .home-content__main {
 
 
 /* ------------------------------------------------------------------- 
-* ## services list
+* ## blocks list
 * ------------------------------------------------------------------- */
-.services-list {
+.blocks-list {
     display: flex;
     flex-wrap: wrap;
 }
-.services-list .service-item {
+.blocks-list .block-item {
     display: flex;
     margin-bottom: 2rem;
     min-height: 300px;
 }
-.services-list .service-item .service-text {
+.blocks-list .block-item .service-text {
     display: flex;
     flex: 1;
     flex-direction: column;
 }
-.services-list .service-item p {
+.blocks-list .block-item p {
     align-items: center;
     background-color: rgba(34, 34, 34, 0.75);
     color: #ddd;
@@ -2392,12 +2397,12 @@ html.no-csstransitions .home-content__main {
     position: relative;
     text-align: justify;    
 }
-.services-list .service-item h3 {
+.blocks-list .block-item h3 {
     color: #a53035;
     margin-top: 0;
     margin-bottom: 1rem;
 }
-.services-list .service-item img {
+.blocks-list .block-item img {
     filter: blur(0px);
     height: 100%;
     opacity: 0.2;
@@ -2405,7 +2410,7 @@ html.no-csstransitions .home-content__main {
     transition: 0.5s;
     -webkit-transition: 0.5s;
 }
-.services-list .service-item img:hover {
+.blocks-list .block-item img:hover {
     filter: blur(3px);
     transition: 0.5s;
     transform: scale(1.1);
@@ -2413,7 +2418,7 @@ html.no-csstransitions .home-content__main {
     zoom: 1.5;
 }
 
-.services-list .service-icon {
+.blocks-list .service-icon {
     color: #a53035;
     font-size: 4.8rem;
 }
@@ -2424,45 +2429,45 @@ html.no-csstransitions .home-content__main {
 * services
 * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    .s-prestations {
+    .s-dark-section {
         padding-top: 7rem;
         padding-bottom: 7rem;
     }
 
-    .services-list [class*="col-"]:nth-child(2n + 1) {
+    .blocks-list [class*="col-"]:nth-child(2n + 1) {
         padding-right: 30px;
     }
-    .services-list [class*="col-"]:nth-child(2n + 2) {
+    .blocks-list [class*="col-"]:nth-child(2n + 2) {
         padding-left: 30px;
     }
 }
 @media only screen and (max-width: 800px) {
-    .s-prestations {
+    .s-dark-section {
         padding-top: 12rem;
         padding-bottom: 12rem;
     }
 
-    .services-list {
+    .blocks-list {
         margin-top: 1.5rem;
     }
-    .services-list .service-icon {
+    .blocks-list .service-icon {
         font-size: 4.5rem;
     }
-    .services-list [class*="col-"]:nth-child(n) {
+    .blocks-list [class*="col-"]:nth-child(n) {
         padding: 0 15px;
     }
 }
 @media only screen and (max-width: 600px) {
-    .services-list [class*="col-"]:nth-child(n) {
+    .blocks-list [class*="col-"]:nth-child(n) {
         padding: 0 10px;
     }
 }
 @media only screen and (max-width: 400px) {
-    .s-prestations {
+    .s-dark-section {
         padding-top: 9.6rem;
     }
 
-    .services-list [class*="col-"]:nth-child(n) {
+    .blocks-list [class*="col-"]:nth-child(n) {
         padding: 0;
     }
 }

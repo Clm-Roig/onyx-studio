@@ -1,13 +1,9 @@
+
 class DataLoader {
   constructor() {
     // CONST 
-    this.nbRandomsProds = os_productions.length - 1
-
+    this.nbRandomsProds = 3
     
-    document.getElementById("ndProds").innerHTML = os_productions.length
-    let os_productions_styles = new Set()
-    os_productions.map(p => os_productions_styles.add(p.style))
-    document.getElementById("nbStyles").innerHTML = os_productions_styles.size
 
     this.loadRandomProductions()
   }
