@@ -37,8 +37,8 @@
 *    ## home animations
 *  # about
 *    ## about process
-*  # services
-*    ## services list
+*  # blocks
+*    ## blocks list
 *  # references
 *    ## bricks/masonry
 *  # testimonials
@@ -3491,6 +3491,18 @@ p.contact-text {
     .cl-go-top::after {
         display: none;
     }
+}
+
+.equipment-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.equipment-logo {
+    filter: color(rgb(250,50,50));
+    height: 5rem;
+    margin: 0 3rem
 }
 
 /*# sourceMappingURL=main.css.map */
