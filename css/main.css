@@ -2384,9 +2384,9 @@ html.no-csstransitions .home-content__main {
     flex: 1;
     flex-direction: column;
 }
-.blocks-list .block-item p {
+.blocks-list .block-item .service-text div {
     align-items: center;
-    background-color: rgba(34, 34, 34, 0.75);
+    background-color: rgba(34, 34, 34, 0.9);
     color: #ddd;
     display: flex;
     justify-content: center;
@@ -2396,6 +2396,9 @@ html.no-csstransitions .home-content__main {
     padding: 2rem;
     position: relative;
     text-align: justify;    
+}
+.blocks-list .block-item .service-text div p {
+    margin-bottom: 0;
 }
 .blocks-list .block-item h3 {
     color: #a53035;

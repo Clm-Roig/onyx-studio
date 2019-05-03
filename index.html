@@ -267,50 +267,48 @@
                 <div class="col-block block-item" data-aos="fade-up">
                     <div class="service-text">
                         <h3><i class="fas fa-chevron-right"></i> Programmation de batterie virtuelle</h3>
-                        <p>
-                            Que l'on soit bien d'accord : une batterie virtuelle ne remplacera pas de sitôt un véritable batteur. Est-ce une raison pour abandonner nos chères boîtes à rythmes ? Certainement pas ! Je tâcherai de faire en sorte qu’elle sonne la plus réaliste possible. Le résultat ne sera pas une simple batterie virtuelle : vous obtiendrez un batteur virtuel, avec toutes les nuances et le touché nécessaire à votre musique.
-                            <img
-                                 src="images/virtual_drums.png" alt="Programmation batterie" 
-                                 />
-                        </p>
+                        <div>
+                            <p>
+                                Que l'on soit bien d'accord : une batterie virtuelle ne remplacera pas de sitôt un véritable batteur. Est-ce une raison pour abandonner nos chères boîtes à rythmes ? Certainement pas ! Je tâcherai de faire en sorte qu’elle sonne la plus réaliste possible. Le résultat ne sera pas une simple batterie virtuelle : vous obtiendrez un <b>batteur virtuel</b>, avec toutes les nuances et le touché nécessaire à votre musique.                                 
+                            </p>
+                            <img src="images/virtual_drums.png" alt="Programmation batterie"/>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-block block-item " data-aos="fade-up">
                     <div class="service-text">
                         <h3><i class="fas fa-chevron-right"></i> Réamping</h3>
-                        <p>
-                            Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                            Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                            Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                            <img
-                                 src="/images/eleven_rack.jpg" alt="Réamping" 
-                             />
-                        </p>
+                        <div>
+                            <p>
+                                Vous préférez me confier votre son de guitare ? Pas de problème ! Enregistrez le signal "dry" de votre guitare et je me charge du reste. Actuellement, j'utilise l'Eleven Rack (<a href="https://www.avid.com/fr/products/pro-tools-eleven-rack">Avid</a>) et le Wall of Sound (<a href="https://www.two-notes.com/wall-of-sound">Two notes</a>), ce qui me permet de vous proposer plus de <b>60 enceintes et 30 amplis virtuels différents</b>. 
+                            </p>
+                            <img src="/images/eleven_rack.jpg" alt="Réamping" />
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-block block-item" data-aos="fade-up">
                     <div class="service-text">
                         <h3><i class="fas fa-chevron-right"></i> Mixage</h3>
-                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                            Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                            Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                            <img
-                                 src="/images/mix.png" alt="Mixage" 
-                                 />
-                        </p>
+                        <div>
+                            <p>
+                                
+                            </p>
+                            <img src="/images/mix.png" alt="Mixage"/>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-block block-item" data-aos="fade-up"> 
                     <div class="service-text">
                         <h3><i class="fas fa-chevron-right"></i> Mastering</h3>
-                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                            Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                            Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                        <div>
+                            <p>
+                            C'est durant le mastering que je vais <b>donner toute leur ampleur</b> à vos morceaux en faisant particulièrement attention à <b>conserver leur dynamique</b>. Je peaufinerai également l'équilibre général de votre mix pour former un tout cohérent et pertinent, en fonction de votre projet.
+                            </p>
                             <img src="/images/mastering.png" alt="Mastering" />
-                        </p>                                     
+                        </div>                                     
                     </div>
                 </div>
 
@@ -466,7 +464,8 @@ Satya Nadella
 
                 <div class="col-full contact-main" data-aos="fade-up">
                     <p>
-                        <a href="mailto:#0" class="contact-email">onyx-studio@protonmail.com</a>
+                        <button onclick="reveal()" id="reveal-email">Afficher email</button>
+                        <a href="" id="contact-email" class="contact-email" style="visibility: hidden; opacity: 0; transition: opacity 1s; width: 0"></a>
                         <!--<span class="contact-number">+1 (917) 123 456  /  +1 (917) 333 987</span>-->
                     </p>
                 </div> <!-- end contact-main -->
@@ -594,6 +593,20 @@ Satya Nadella
 
         <!-- ==== Custom Ony-Studio JS ==== -->
         <script src="os_data/os_dataLoader.js"></script>
+        
+        <!-- Anti-spam script -->
+        <script>
+            function reveal(){
+                decrypted = atob("b255eC1zdHVkaW9AcHJvdG9ubWFpbC5jb20=")
+                document.getElementById("contact-email").href = "mailto:" + decrypted
+                
+                document.getElementById("reveal-email").style.display = "none"
+                document.getElementById("contact-email").innerHTML = decrypted                                
+                document.getElementById("contact-email").style.visibility = "visible"
+                document.getElementById("contact-email").style.width = "auto"
+                document.getElementById("contact-email").style.opacity = 1
+            }
+        </script>
     </body>
 
 </html>
