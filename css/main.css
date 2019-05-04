@@ -93,7 +93,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-    color: #a53035;
+    color: #d54045;
 }
 
 a:hover,
@@ -3106,6 +3106,11 @@ p.contact-text {
     position: absolute;
     top: 0;
     left: 0;
+}
+.contact-email:hover,
+.contact-email:focus,
+.contact-email:active {
+    color: #a53035;
 }
 
 .contact-number {
