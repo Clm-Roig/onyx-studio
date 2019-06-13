@@ -2378,7 +2378,7 @@ html.no-csstransitions .home-content__main {
 .blocks-list .block-item {
     display: flex;
     margin-bottom: 2rem;
-    min-height: 300px;
+    min-height: 330px;
 }
 .blocks-list .block-item .service-text {
     display: flex;
@@ -2387,7 +2387,7 @@ html.no-csstransitions .home-content__main {
 }
 .blocks-list .block-item .service-text div {
     align-items: center;
-    background-color: rgba(34, 34, 34, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     color: #ddd;
     display: flex;
     justify-content: center;
