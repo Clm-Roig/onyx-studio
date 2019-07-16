@@ -51,8 +51,10 @@ function replaceInTemplate(production) {
 				let regex = new RegExp('\\$\\$' + key + '\\$\\$', 'g')
 				final_brick = final_brick.replace(regex, value)	
 			}
-			
 		}		
+    if(key == "cover_url" && value == "") {
+        final_brick = final_brick.replace("$$cover_url$$", 'images/covers/no_image.png')
+    }
 	})
 	
 	// Remove empty remaining slots

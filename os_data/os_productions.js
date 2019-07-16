@@ -50,5 +50,18 @@ const os_productions = [
         youtube_url: "https://www.youtube.com/watch?v=3mD6pFnvNsA",
         year: 2015,
         credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
+    },
+    {
+        name: "Tales of Aeria A Steampunk Story",
+        band: "Nick Dawson",
+        country: "FR",
+        link: "",
+        style: "Soundtrack",
+        logo_url: "",
+        cover_url: "",
+        facebook_url: "",
+        youtube_url: "",
+        year: 2019,
+        credits: ['Mastering']
     }
 ];
