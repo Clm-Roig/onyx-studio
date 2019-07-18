@@ -2495,9 +2495,7 @@ html.no-csstransitions .home-content__main {
 
 .s-references button.shuffle_prods {
     background-color: #a53035;
-    border: none;
     color: #dddddd;
-    float: right;
     height: 4.5rem;
     line-height: 4.5rem;
     margin: 0;
@@ -2509,6 +2507,7 @@ html.no-csstransitions .home-content__main {
 .s-references button.shuffle_prods:hover {
     cursor: pointer;
     background-color: #941e23;
+    transform: scale(1.2);
 }
 
 .s-references button.shuffle_prods:active {
@@ -2519,10 +2518,19 @@ html.no-csstransitions .home-content__main {
 /* ------------------------------------------------------------------- 
 * ## bricks/masonry
 * ------------------------------------------------------------------- */
+
+#productionsSample { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#productionsSample .masonry__brick {
+    flex: 1;
+    flex-basis: 33%;
+}
+
 .masonry-wrap {
     margin-top: 3rem;
-    max-width: none;
-    width: 1200px;
 }
 
 .masonry:after {
@@ -2546,7 +2554,6 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__thumb img {
-    max-width: 400px;
     vertical-align: top;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -2599,7 +2606,7 @@ html.no-csstransitions .home-content__main {
     z-index: 2;
     position: absolute;
     left: 0;
-    bottom: 3.6rem;
+    bottom: 0;
     padding: 0 3rem;
     -webkit-transform: translate3d(0, -100%, 0);
     -ms-transform: translate3d(0, -100%, 0);
@@ -2612,12 +2619,13 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__credits {
     background: #520002;
-    bottom: 0;
     color: #dddddd;
-    z-index: 2;
     position: absolute;
-    left: 0;
-    padding: 0 2rem;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    line-height: 1.4;
+    padding: 0.5rem 1rem;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.5s ease-in-out;
@@ -2629,7 +2637,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__credits .credits-text {
     font-family: "montserrat-regular";
-    font-size: 1.1rem;  
+    font-size: 1.2rem;  
 }
 
 .item-folio__title {
@@ -2669,10 +2677,10 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__facebook-link {
-    top: 7rem;
+    top: 10rem;
 }
 .item-folio__youtube-link {
-    top: 3rem;
+    top: 6rem;
 }
 
 .item-folio__social-network-link::before {
@@ -2736,6 +2744,26 @@ html.no-csstransitions .home-content__main {
 * responsive:
 * references
 * ------------------------------------------------------------------- */
+
+
+
+@media only screen and (max-width: 800px) {
+    #productionsSample .masonry__brick {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #productionsSample .masonry__brick {
+        flex-basis: 100%;
+    }
+}
+
+/* ===== Clément ROIG 18/07/2019 =====
+    Old portofolio  responsive rules : useless with flex now 
+*/
+
+/*
 @media only screen and (max-width: 1500px) {
     .masonry-wrap {
         width: 1200px;
@@ -2806,7 +2834,7 @@ html.no-csstransitions .home-content__main {
         width: auto;
     }
 }
-
+*/
 
 
 /* ===================================================================
