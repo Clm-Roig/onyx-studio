@@ -83,7 +83,7 @@ const os_productions = [
         country: "FR",
         link: "",
         style: "Black Doom",
-        logo_url: "",
+        logo_url: "images/logos/eternal_hunt_logo.png",
         cover_url: "",
         facebook_url: "https://www.facebook.com/EternalHuntBand",
         youtube_url: "",

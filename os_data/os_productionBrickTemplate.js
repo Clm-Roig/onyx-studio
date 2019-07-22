@@ -3,7 +3,7 @@ var os_production_brick_template = `
 	<div class="item-folio"> 
 
 		<div class="item-folio__thumb">
-			<img src="$$cover_url$$" alt="$$band$$ - $$name$$ artwork"> 
+			<img src="$$cover_url$$" alt="$$band$$ - $$name$$ artwork" class="production-sample"> 
 		</div> 
 
 		$$youtube_link$$
@@ -53,7 +53,10 @@ function replaceInTemplate(production) {
 			}
 		}		
     if(key == "cover_url" && value == "") {
-        final_brick = final_brick.replace("$$cover_url$$", 'images/covers/no_image.png')
+        if(production['logo_url'] != "")
+            final_brick = final_brick.replace("$$cover_url$$", production['logo_url'])
+        else
+            final_brick = final_brick.replace("$$cover_url$$", "images/covers/no_image.png")
     }
 	})
 	
