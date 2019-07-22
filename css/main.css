@@ -334,11 +334,10 @@ mark {
 }
 
 hr {
-    border: solid rgba(0, 0, 0, 0.1);
-    border-width: 1px 0 0;
-    clear: both;
-    margin: 2.4rem 0 1.5rem;
-    height: 0;
+    background-color: #333;
+    border: none;
+    height: 1px;
+    width: 100%;    
 }
 
 
@@ -2439,8 +2438,8 @@ html.no-csstransitions .home-content__main {
 * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
     .s-dark-section {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 
     .blocks-list [class*="col-"]:nth-child(2n + 1) {
@@ -2452,8 +2451,8 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 800px) {
     .s-dark-section {
-        padding-top: 12rem;
-        padding-bottom: 12rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 
     .blocks-list {
@@ -2489,7 +2488,7 @@ html.no-csstransitions .home-content__main {
 * ------------------------------------------------------------------- */
 .s-references {
     background: #ffffff;
-    padding: 9rem 0 12rem;
+    padding: 6rem 0 6rem;
     position: relative;
 }
 
@@ -3100,8 +3099,8 @@ html.no-csstransitions .home-content__main {
 *
 * ------------------------------------------------------------------- */
 .s-contact {
-    padding-top: 15rem;
-    padding-bottom: 10.2rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background-color: #111111;
     color: rgba(255, 255, 255, 0.3);
     position: relative;
