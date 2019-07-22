@@ -63,5 +63,31 @@ const os_productions = [
         youtube_url: "",
         year: 2019,
         credits: ['Mastering']
+    },
+    {
+        name: "IMMNT",
+        band: "IMMNT",
+        country: "FR",
+        link: "",
+        style: "Black Doom",
+        logo_url: "",
+        cover_url: "",
+        facebook_url: "",
+        youtube_url: "",
+        year: 2019,
+        credits: ['Mastering']
+    },
+    {
+        name: "Démo",
+        band: "Eternal Hunt",
+        country: "FR",
+        link: "",
+        style: "Black Doom",
+        logo_url: "",
+        cover_url: "",
+        facebook_url: "https://www.facebook.com/EternalHuntBand",
+        youtube_url: "",
+        year: 2019,
+        credits: ['Mixage', 'Mastering']
     }
 ];
