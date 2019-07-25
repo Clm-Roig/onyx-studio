@@ -2561,16 +2561,21 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio {
-    position: relative;
+    height: 100%;
+}
+
+.item-folio__thumb {
+    align-items: center;
+    display: flex;
+    height: 100%;
     overflow: hidden;
+    width: 100%;
 }
 
 .item-folio__thumb img {
     vertical-align: top;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    height: 100%;
-    width: 100%;
 }
 .item-folio__thumb a {
     display: block;
