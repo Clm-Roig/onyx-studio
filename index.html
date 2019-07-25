@@ -37,6 +37,7 @@
         <!-- Data -->
         <script src="os_data/os_productions.js"></script>
         <script src="os_data/os_productionBrickTemplate.js"></script>
+        <script src="os_data/os_logoBrickTemplate.js"></script>
 
     </head>
 
@@ -347,12 +348,21 @@
             <div class="row section-header">
                 <div class="col-full">
                     <h3 class="subhead">Références</h3>
-                    <button onclick="os_data.loadRandomProductions()" class="shuffle_prods"><i class="fas fa-random"></i></button>                    
+                    <button onclick="os_data.loadRandomProductions();os_data.loadRandomLogos();" class="shuffle_prods"><i class="fas fa-random"></i></button>                    
                 </div>
             </div> <!-- end section-header -->
-
+                
+            
             <div class="row masonry-wrap">
                 <div class="" id="productionsSample" style="height: auto">
+
+                </div> <!-- end masonry -->
+            </div> <!-- end masonry-wrap -->
+            
+            &nbsp
+            
+            <div class="row masonry-wrap">
+                <div class="" id="logosSample" style="height: auto">
 
                 </div> <!-- end masonry -->
             </div> <!-- end masonry-wrap -->
@@ -483,26 +493,26 @@ Satya Nadella
                     <div class="row">
                         <div class="col-1-2">
                             <ul class="os-list">
-                                <li class="os-list-item">
+                                <li class="os-list-item-white">
                                     Maelstrom Photography
                                     <a href="https://www.instagram.com/maelstrom.mortsleam/"><i class="fab fa-instagram"></i></a>
                                     <a href="https://www.facebook.com/MaelstromPhoto/"><i class="fab fa-facebook"></i></a>
                                 </li>
-                                <li class="os-list-item">
+                                <li class="os-list-item-white">
                                     Nina S MUA
                                     <a href="https://www.instagram.com/ninasmua"><i class="fab fa-instagram"></i></a>
                                 </li>
-                                <li class="os-list-item">
+                                <li class="os-list-item-white">
                                     Hugo Champion
                                     <a href="https://www.instagram.com/hugo.champion"><i class="fab fa-instagram"></i></a>
                                 </li>
-                                <li class="os-list-item">
+                                <li class="os-list-item-white">
                                     Raphaëlle Monvoisin
                                     <a href="http://raphaellemonvoisin.com/"><i class="fas fa-globe"></i></a>
                                     <a href="https://www.instagram.com/raphaellemonvoisin"><i class="fab fa-instagram"></i></a>                               
                                     <a href="https://www.facebook.com/RaphaelleM.creations/"><i class="fab fa-facebook"></i></a>
                                 </li>
-                                <li class="os-list-item">
+                                <li class="os-list-item-white">
                                     The Studio Experience
                                     <a href="https://thestudioexperience.fr/"><i class="fas fa-globe"></i></a>
                                     <a href="https://www.facebook.com/groups/thestudioexperience/"><i class="fab fa-facebook"></i></a>                                    
@@ -511,21 +521,21 @@ Satya Nadella
                         </div>
                         <div class="col-1-2">
                             <ul class="os-list">
-                                <li class="os-list-item">
+                                <li class="os-list-item-white">
                                     Pénètre mon diaphragme
                                     <a href="https://www.instagram.com/penetre_mon_diaphragme/"><i class="fab fa-instagram"></i></a>                         
                                     <a href="https://www.facebook.com/Diaphragmentation/"><i class="fab fa-facebook"></i></a>
                                 </li>
-                                <li class="os-list-item">
+                                <li class="os-list-item-white">
                                     Cécile Humenny Photographe
                                     <a href="https://www.instagram.com/humennyc.photo/"><i class="fab fa-instagram"></i></a>                         
                                     <a href="https://www.facebook.com/cecilehumennyphotographe//"><i class="fab fa-facebook"></i></a>
                                 </li>
-                                <li class="os-list-item">
+                                <li class="os-list-item-white">
                                     Molotov Agency
                                     <a href="https://www.facebook.com/molotovagencybooking/"><i class="fab fa-facebook"></i></a>
                                 </li>
-                                <li class="os-list-item">
+                                <li class="os-list-item-white">
                                     Endless Decrepitude Productions
                                     <a href="https://www.facebook.com/endlessdecrepitudeprod/"><i class="fab fa-facebook"></i></a>
                                     <a href="https://endlessdecrepitudeprod.bandcamp.com/"><i class="fab fa-bandcamp"></i></a>

@@ -29,7 +29,7 @@ var os_production_brick_template = `
 </div> <!-- end masonry__brick -->  
 `;
 
-function replaceInTemplate(production) {
+function replaceInProdTemplate(production) {
 	final_brick = os_production_brick_template
 	keys = Object.keys(production)
 	keys.map((key) => {

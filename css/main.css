@@ -418,6 +418,10 @@ ul.os-list {
     list-style-type: none;
 }
 
+ul.os-list .os-list-item-white {
+    color: #fff;
+}
+
 
 /* ------------------------------------------------------------------- 
 * ## responsive video container
@@ -2541,6 +2545,18 @@ html.no-csstransitions .home-content__main {
     flex-basis: 33%;
 }
 
+#logosSample {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoSample {
+    height: 100%;
+    max-width: 250px;
+    flex: 1;
+}
+
 .masonry-wrap {
     margin-top: 3rem;
 }
@@ -2568,6 +2584,7 @@ html.no-csstransitions .home-content__main {
     align-items: center;
     display: flex;
     height: 100%;
+    justify-content: center;
     overflow: hidden;
     width: 100%;
 }
