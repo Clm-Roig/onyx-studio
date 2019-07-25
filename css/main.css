@@ -2521,6 +2521,7 @@ html.no-csstransitions .home-content__main {
 #productionsSample { 
     display: flex;
     flex-wrap: wrap;
+    height: auto;
 }
 
 #productionsSample .masonry__brick {
