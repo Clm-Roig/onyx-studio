@@ -2549,7 +2549,8 @@ html.no-csstransitions .home-content__main {
 #logosSample {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .logoSample {
