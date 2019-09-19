@@ -9,7 +9,7 @@ const os_productions = [
         cover_url: "images/covers/Antropofago-A_Propensity_for_Violence.png",
         facebook_url: "https://www.facebook.com/antropofago.deathmetal",
         youtube_url: "https://www.youtube.com/watch?v=yK160fu2cXI",
-        year: 2018,
+        release_year: 2018,
         credits: ['Programmation batterie', 'Mixage']
     },
     {
@@ -22,7 +22,7 @@ const os_productions = [
         cover_url: "images/covers/Mysticisme-Rites.jpg",
         facebook_url: "https://www.facebook.com/Mysticismeband",
         youtube_url: "https://www.youtube.com/watch?v=RjrnN1vny2o",
-        year: 2016,
+        release_year: 2016,
         credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
     },
     {
@@ -35,7 +35,7 @@ const os_productions = [
         cover_url: "images/covers/Opprobre-Le_Naufrage.jpg",
         facebook_url: "https://www.facebook.com/opprobre",
         youtube_url: "https://www.youtube.com/watch?v=Nn0V-FKm5KY",
-        year: 2017,
+        release_year: 2017,
         credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
     },
     {
@@ -48,7 +48,7 @@ const os_productions = [
         cover_url: "images/covers/Devolution-The_Perpetual_Motion.jpg",
         facebook_url: "https://www.facebook.com/devolution.dbm",
         youtube_url: "https://www.youtube.com/watch?v=3mD6pFnvNsA",
-        year: 2015,
+        release_year: 2015,
         credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
     },
     {
@@ -61,7 +61,7 @@ const os_productions = [
         cover_url: "",
         facebook_url: "",
         youtube_url: "",
-        year: 2019,
+        release_year: "",
         credits: ['Mastering']
     },
     {
@@ -74,7 +74,7 @@ const os_productions = [
         cover_url: "",
         facebook_url: "",
         youtube_url: "",
-        year: 2019,
+        release_year: "",
         credits: ['Mastering']
     },
     {
@@ -87,7 +87,7 @@ const os_productions = [
         cover_url: "",
         facebook_url: "https://www.facebook.com/EternalHuntBand",
         youtube_url: "",
-        year: 2019,
+        release_year: 2019,
         credits: ['Mixage', 'Mastering']
     }
 ];

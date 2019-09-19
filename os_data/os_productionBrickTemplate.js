@@ -14,7 +14,7 @@ var os_production_brick_template = `
 				$$name$$
 			</h3> 
 			<p class="item-folio__cat">
-				$$band$$ ($$year$$)
+				$$band$$ ($$release_year$$)
 			</p> 
 		</div> 
 
@@ -52,11 +52,18 @@ function replaceInProdTemplate(production) {
 				final_brick = final_brick.replace(regex, value)	
 			}
 		}		
-    if(key == "cover_url" && value == "") {
-        if(production['logo_url'] != "")
-            final_brick = final_brick.replace("$$cover_url$$", production['logo_url'])
-        else
-            final_brick = final_brick.replace("$$cover_url$$", "images/covers/no_image.png")
+    
+    // Handle null values
+    else {
+        if(key == "cover_url") {
+            if(production['logo_url'] != "")
+                final_brick = final_brick.replace("$$cover_url$$", production['logo_url'])
+            else
+                final_brick = final_brick.replace("$$cover_url$$", "images/covers/no_image.png")
+        }
+        if(key == "release_year") {
+            final_brick = final_brick.replace("($$release_year$$)", "")
+        }
     }
 	})
 	

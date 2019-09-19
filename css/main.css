@@ -2429,7 +2429,7 @@ html.no-csstransitions .home-content__main {
 .blocks-list .block-item img {
     filter: blur(0px);
     height: 100%;
-    opacity: 0.2;
+    opacity: 0.110;
     position: absolute;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -2658,7 +2658,7 @@ html.no-csstransitions .home-content__main {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 0 3rem;
+    padding: 0.5rem 1rem;
     -webkit-transform: translate3d(0, -100%, 0);
     -ms-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
