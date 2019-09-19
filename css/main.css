@@ -2496,6 +2496,18 @@ html.no-csstransitions .home-content__main {
     }
 }
 
+.full-width-2img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.full-width-2img img {
+    filter: brightness(50%);
+    flex: 1;
+    min-width: 300px;
+    transition: 1s;
+    width: 100%;    
+}
 
 
 /* ===================================================================
