@@ -78,15 +78,15 @@ const os_productions = [
         credits: ['Mastering']
     },
     {
-        name: "Démo",
+        name: "Primary Instinct",
         band: "Eternal Hunt",
         country: "FR",
-        link: "",
-        style: "Black Doom",
+        link: "https://eternalhunt.bandcamp.com/releases",
+        style: "Black Metal",
         logo_url: "images/logos/eternal_hunt_logo.png",
         cover_url: "",
         facebook_url: "https://www.facebook.com/EternalHuntBand",
-        youtube_url: "",
+        youtube_url: "https://www.youtube.com/watch?v=7a8BRvrqx34",
         release_year: 2019,
         credits: ['Mixage', 'Mastering']
     }
