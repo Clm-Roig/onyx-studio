@@ -84,7 +84,7 @@ const os_productions = [
         link: "https://eternalhunt.bandcamp.com/releases",
         style: "Black Metal",
         logo_url: "images/logos/eternal_hunt_logo.png",
-        cover_url: "",
+        cover_url: "images/covers/Eternal_Hunt-Primary_Instinct.jpg",
         facebook_url: "https://www.facebook.com/EternalHuntBand",
         youtube_url: "https://www.youtube.com/watch?v=7a8BRvrqx34",
         release_year: 2019,

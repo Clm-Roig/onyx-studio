@@ -2554,7 +2554,7 @@ html.no-csstransitions .home-content__main {
 
 #productionsSample .masonry__brick {
     flex: 1;
-    flex-basis: 33%;
+    flex-basis: 25%;
 }
 
 #logosSample {
