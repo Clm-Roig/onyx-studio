@@ -1,5 +1,5 @@
 var os_logo_brick_template = `
-    <img data-aos="fade-up" class="logoSample" src="$$logo_url$$"/>
+    <img class="logoSample" src="$$logo_url$$"/>
 `;
 
 function replaceInLogoTemplate(production) {
