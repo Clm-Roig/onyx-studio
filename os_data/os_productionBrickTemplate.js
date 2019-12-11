@@ -1,5 +1,5 @@
 var os_production_brick_template = `
-<div class="masonry__brick" data-aos="fade-up"> 
+<div class="masonry__brick"> 
 	<div class="item-folio"> 
 
 		<div class="item-folio__thumb">
