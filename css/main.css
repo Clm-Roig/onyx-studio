@@ -2593,6 +2593,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio {
     height: 100%;
+    position: relative;
 }
 
 .item-folio__thumb {
