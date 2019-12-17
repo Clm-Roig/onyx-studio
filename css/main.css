@@ -196,8 +196,7 @@ p.lead {
     text-align: justify;
     line-height: 1.75;
     margin-bottom: 3.6rem;
-    min-width: 400px;
-    flex: 5;
+    flex: 5 1 400px;
 }
 
 .presentation-img {
