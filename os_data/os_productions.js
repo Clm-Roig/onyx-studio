@@ -89,5 +89,17 @@ const os_productions = [
         youtube_url: "https://www.youtube.com/watch?v=7a8BRvrqx34",
         release_year: 2019,
         credits: ['Mixage', 'Mastering']
+    },
+    {
+        name: "Wintersongs (remastered)",
+        band: "Solventis",
+        country: "FR",
+        link: "https://solventis.bandcamp.com/releases",
+        style: "Dark Folk",
+        logo_url: "images/logos/solventis_logo.png",
+        cover_url: "images/covers/Solventis-Wintersongs_(remastered).jpg",
+        facebook_url: "https://www.facebook.com/solventis",
+        release_year: 2020,
+        credits: ['Mastering']
     }
 ];
