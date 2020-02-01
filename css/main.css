@@ -414,7 +414,7 @@ dd {
 
 /* Custom Onyx Studio list */
 ul.os-list {
-    font-size: 2rem;
+    font-size: 1.8rem;
     list-style-type: none;
 }
 
@@ -2564,11 +2564,12 @@ html.no-csstransitions .home-content__main {
 }
 
 .logoSample {
+    flex: 1;
+    flex-basis: 16.66666666666%;
     height: 100%;
     min-width: 100px;
     max-width: 250px;
-    width: 100%;
-    flex: 1;
+    width: 100%;    
 }
 
 .masonry-wrap {
