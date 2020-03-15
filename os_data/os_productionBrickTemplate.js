@@ -8,6 +8,7 @@ var os_production_brick_template = `
 
 		$$youtube_link$$
 		$$facebook_link$$
+    $$bandcamp_link$$
 
 		<div class="item-folio__text"> 
 			<h3 class="item-folio__title"> 
@@ -42,6 +43,10 @@ function replaceInProdTemplate(production) {
 			else if (key == "facebook_url"){
 				value = getFacebookLink(value)
 				final_brick = final_brick.replace("$$facebook_link$$", value)
+			}
+        else if (key == "bandcamp_url"){
+				value = getBandcampLink(value)
+				final_brick = final_brick.replace("$$bandcamp_link$$", value)
 			}
       else if (key == "credits"){
         value = value.join(", ")
@@ -84,6 +89,13 @@ function getYoutubeLink(youtube_url) {
 function getFacebookLink(facebook_url) {
 	res = '<a href="' + facebook_url + '" target= "_blank" class="item-folio__social-network-link item-folio__facebook-link" title="Facebook link">'
 	res += '<i class="fab fa-facebook-f"></i>'
+	res += '</a>'
+	return res
+}
+
+function getBandcampLink(bandcamp_url) {
+	res = '<a href="' + bandcamp_url + '" target= "_blank" class="item-folio__social-network-link item-folio__bandcamp-link" title="Bandcamp link">'
+	res += '<i class="fab fa-bandcamp"></i>'
 	res += '</a>'
 	return res
 }

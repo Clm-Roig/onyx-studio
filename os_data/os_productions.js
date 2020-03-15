@@ -9,6 +9,7 @@ const os_productions = [
         cover_url: "images/covers/Antropofago-A_Propensity_for_Violence.png",
         facebook_url: "https://www.facebook.com/antropofago.deathmetal",
         youtube_url: "https://www.youtube.com/watch?v=yK160fu2cXI",
+        bandcamp_url: "https://antropofago.bandcamp.com/album/a-propensity-for-violence",
         release_year: 2018,
         credits: ['Programmation batterie', 'Mixage']
     },
@@ -22,6 +23,7 @@ const os_productions = [
         cover_url: "images/covers/Mysticisme-Rites.jpg",
         facebook_url: "https://www.facebook.com/Mysticismeband",
         youtube_url: "https://www.youtube.com/watch?v=RjrnN1vny2o",
+        bandcamp_url: "https://endlessdecrepitudeprod.bandcamp.com/album/rites",
         release_year: 2016,
         credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
     },
@@ -35,6 +37,7 @@ const os_productions = [
         cover_url: "images/covers/Opprobre-Le_Naufrage.jpg",
         facebook_url: "https://www.facebook.com/opprobre",
         youtube_url: "https://www.youtube.com/watch?v=Nn0V-FKm5KY",
+        bandcamp_url: "https://endlessdecrepitudeprod.bandcamp.com/album/le-naufrage",
         release_year: 2017,
         credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
     },
@@ -48,6 +51,7 @@ const os_productions = [
         cover_url: "images/covers/Devolution-The_Perpetual_Motion.jpg",
         facebook_url: "https://www.facebook.com/devolution.dbm",
         youtube_url: "https://www.youtube.com/watch?v=3mD6pFnvNsA",
+        bandcamp_url: "",
         release_year: 2015,
         credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
     },
@@ -61,19 +65,21 @@ const os_productions = [
         cover_url: "",
         facebook_url: "",
         youtube_url: "",
+        bandcamp_url: "",
         release_year: "",
         credits: ['Mastering']
     },
     {
-        name: "IMMNT",
-        band: "IMMNT",
+        name: "IMMNNT",
+        band: "IMMNNT",
         country: "FR",
         link: "",
         style: "Black Doom",
-        logo_url: "",
-        cover_url: "",
-        facebook_url: "",
+        logo_url: "images/logos/immnnt_logo.png",
+        cover_url: "images/covers/IMMNNT - IMMNNT.jpg",
+        facebook_url: "https://www.facebook.com/I-m-m-n-n-t-101919168112693/",
         youtube_url: "",
+        bandcamp_url: "https://solar-asceticists-productions.bandcamp.com/album/s-t-exclusive-premiere",
         release_year: "",
         credits: ['Mastering']
     },
@@ -87,6 +93,7 @@ const os_productions = [
         cover_url: "images/covers/Eternal_Hunt-Primary_Instinct.jpg",
         facebook_url: "https://www.facebook.com/EternalHuntBand",
         youtube_url: "https://www.youtube.com/watch?v=7a8BRvrqx34",
+        bandcamp_url: "https://eternalhunt.bandcamp.com/album/primary-instinct",
         release_year: 2019,
         credits: ['Mixage', 'Mastering']
     },
@@ -99,6 +106,22 @@ const os_productions = [
         logo_url: "images/logos/solventis_logo.png",
         cover_url: "images/covers/Solventis-Wintersongs_(remastered).jpg",
         facebook_url: "https://www.facebook.com/solventis",
+        youtube_url: "",
+        bandcamp_url: "",
+        release_year: 2020,
+        credits: ['Mastering']
+    },
+    {
+        name: "Leaks",
+        band: "Croon",
+        country: "FR",
+        link: "",
+        style: "Acid / Tribe",
+        logo_url: "",
+        cover_url: "",
+        facebook_url: "https://www.facebook.com/croon.exo",
+        youtube_url: "",
+        bandcamp_url: "",
         release_year: 2020,
         credits: ['Mastering']
     }

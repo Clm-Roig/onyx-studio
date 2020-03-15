@@ -2553,23 +2553,23 @@ html.no-csstransitions .home-content__main {
 
 #productionsSample .masonry__brick {
     flex: 1;
-    flex-basis: 25%;
+    flex-basis: 20%;
 }
 
 #logosSample {
     align-items: center;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .logoSample {
     flex: 1;
-    flex-basis: 16.66666666666%;
+    flex-basis: 33.333%;
     height: 100%;
     min-width: 100px;
-    max-width: 250px;
-    width: 100%;    
+    max-width: 300px;
+    width: 100%;
 }
 
 .masonry-wrap {
@@ -2728,11 +2728,14 @@ html.no-csstransitions .home-content__main {
     text-align: center;
 }
 
+.item-folio__youtube-link {
+    top: 6rem;
+}
 .item-folio__facebook-link {
     top: 10rem;
 }
-.item-folio__youtube-link {
-    top: 6rem;
+.item-folio__bandcamp-link {
+    top: 14rem;
 }
 
 .item-folio__social-network-link::before {
@@ -2757,6 +2760,12 @@ html.no-csstransitions .home-content__main {
 .item-folio__facebook-link:focus,
 .item-folio__facebook-link:active {
     background-color: #4267b2;
+}
+
+.item-folio__bandcamp-link:hover,
+.item-folio__bandcamp-link:focus,
+.item-folio__bandcamp-link:active {
+    background-color: #1da0c3;
 }
 
 /* on hover */
