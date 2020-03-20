@@ -2495,15 +2495,15 @@ html.no-csstransitions .home-content__main {
     }
 }
 
-.full-width-2img {
+.full-width-3img {
     display: flex;
     flex-wrap: wrap;
 }
 
-.full-width-2img img {
-    filter: brightness(50%);
+.full-width-3img img {
+    filter: brightness(70%);
     flex: 1;
-    min-width: 300px;
+    flex-basis: 300px;
     transition: 1s;
     width: 100%;    
 }
