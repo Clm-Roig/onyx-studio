@@ -124,5 +124,19 @@ const os_productions = [
         bandcamp_url: "",
         release_year: 2020,
         credits: ['Mastering']
+    },
+    {
+        name: "Them",
+        band: "Croon",
+        country: "FR",
+        link: "",
+        style: "Acid / Tribe",
+        logo_url: "",
+        cover_url: "",
+        facebook_url: "https://www.facebook.com/croon.exo",
+        youtube_url: "",
+        bandcamp_url: "",
+        release_year: 2020,
+        credits: ['Stems Mastering']
     }
 ];

@@ -2213,14 +2213,54 @@ html.no-csstransitions .home-content__main {
 }
 
 
+/* ===================================================================
+* # latest prods
+*
+* ------------------------------------------------------------------- */
+.s-latest-prod-videos {
+    padding: 6rem;
+}
+
+h3.latest-prods {
+    margin-bottom: 6rem;
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s-latest-prod-videos .iframe-container {
+    flex: 1;
+    margin: 1rem;
+    min-width: 360px;
+    overflow: hidden; 
+    position: relative; 
+}
+
+.s-latest-prod-videos .iframe-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+
+.iframe-container iframe {    
+    left: 0; 
+    top: 0; 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 
 /* ===================================================================
 * # about
 *
 * ------------------------------------------------------------------- */
 .s-presentation {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background-color: #ffffff;
     position: relative;
 }
