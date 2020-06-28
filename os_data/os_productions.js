@@ -70,18 +70,18 @@ const os_productions = [
         credits: ['Mastering']
     },
     {
-        name: "IMMNNT",
-        band: "IMMNNT",
+        name: "Valè",
+        band: "Splendor Noctis",
         country: "FR",
         link: "",
-        style: "Black Doom",
-        logo_url: "images/logos/immnnt_logo.png",
-        cover_url: "images/covers/IMMNNT - IMMNNT.jpg",
-        facebook_url: "https://www.facebook.com/I-m-m-n-n-t-101919168112693/",
-        youtube_url: "",
-        bandcamp_url: "https://solar-asceticists-productions.bandcamp.com/album/s-t-exclusive-premiere",
-        release_year: "",
-        credits: ['Mastering']
+        style: "Dark Folk Ambiant",
+        logo_url: "",
+        cover_url: "images/covers/Splendor_Noctis-Valè.jpg",
+        facebook_url: "https://www.facebook.com/splendornoctis",
+        youtube_url: "https://www.youtube.com/channel/UCz2a416hkN2g7h1pJzlJc-Q",
+        bandcamp_url: "https://splendornoctis.bandcamp.com/",
+        release_year: "2020",
+        credits: ['Mix', 'Mastering']
     },
     {
         name: "Primary Instinct",
