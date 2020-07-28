@@ -2253,6 +2253,12 @@ h3.latest-prods {
     position: absolute;
 }
 
+@media only screen and (max-width: 500px) {
+    .s-latest-prod-videos .iframe-container {
+        min-width: 100%;
+    }
+}
+
 
 /* ===================================================================
 * # about
