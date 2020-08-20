@@ -138,5 +138,19 @@ const os_productions = [
         bandcamp_url: "",
         release_year: 2020,
         credits: ['Stems Mastering']
-    }
+    },
+    {
+        name: "Le Silence",
+        band: "Sunnudagr",
+        country: "FR",
+        link: "",
+        style: "Black Metal",
+        logo_url: "images/logos/sunnudagr_logo.png",
+        cover_url: "images/covers/Sunnudagr-Le_Silence.jpg",
+        facebook_url: "https://www.facebook.com/Sunnudagr",
+        youtube_url: "https://www.youtube.com/channel/UCJGbspYGmloMsi0RMhjXK-g",
+        bandcamp_url: "",
+        release_year: 2020,
+        credits: ['Réamping', 'Mixage']
+    },
 ];
