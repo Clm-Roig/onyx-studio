@@ -203,7 +203,7 @@ p.lead {
     flex-basis: 400px;
     flex: 3;    
     height: 100%;
-    min-width: 200px;
+    min-width: 350px;
     padding: 0 2rem;
     width: 100%;
 }
@@ -2228,12 +2228,14 @@ h3.latest-prods {
 .video-list {
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 .s-latest-prod-videos .iframe-container {
-    flex: 1;
+    flex-basis: 45%;
     margin: 1rem;
-    min-width: 360px;
+    min-width: 400px;
     overflow: hidden; 
     position: relative; 
 }
@@ -2253,9 +2255,9 @@ h3.latest-prods {
     position: absolute;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
     .s-latest-prod-videos .iframe-container {
-        min-width: 100%;
+        flex-basis: 100%;
     }
 }
 

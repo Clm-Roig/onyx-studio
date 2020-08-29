@@ -55,7 +55,7 @@ const os_productions = [
         release_year: 2015,
         credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
     },
-    {
+    /*{
         name: "Tales of Aeria A Steampunk Story",
         band: "Nick Dawson",
         country: "FR",
@@ -68,7 +68,7 @@ const os_productions = [
         bandcamp_url: "",
         release_year: "",
         credits: ['Mastering']
-    },
+    },*/
     {
         name: "Valè",
         band: "Splendor Noctis",
