@@ -2581,11 +2581,11 @@ h3.latest-prods {
 .s-references button.shuffle_prods:hover {
     cursor: pointer;
     background-color: #941e23;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .s-references button.shuffle_prods:active {
-    transform: scale(1.2); 
+    transform: scale(1.1); 
 }
 
 
