@@ -3,7 +3,7 @@ class DataLoader {
         // CONST 
         this.nbRandomsProds = 10
         this.loadRandomProductions()
-        this.nbRandomsLogos = 10
+        this.nbRandomsLogos = 100
         this.loadRandomLogos()
     }
 
@@ -29,7 +29,7 @@ class DataLoader {
             .map(a => a.x)
         
         production_tmp.forEach((prod) => {
-            if (prod.logo_url != "") {
+            if (prod.logo_url !== "" && !productionsToUse.find((p) => p.band === prod.band)) {
                 productionsToUse.push(prod)
             }
         })
