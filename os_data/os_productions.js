@@ -75,7 +75,7 @@ const os_productions = [
     country: "FR",
     link: "",
     style: "Dark Folk Ambiant",
-    logo_url: "",
+    logo_url: "images/logos/splendor_noctis_logo.png",
     cover_url: "images/covers/Splendor_Noctis-Valè.jpg",
     facebook_url: "https://www.facebook.com/splendornoctis",
     youtube_url: "https://www.youtube.com/channel/UCz2a416hkN2g7h1pJzlJc-Q",
