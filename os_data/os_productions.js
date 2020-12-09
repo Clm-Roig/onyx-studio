@@ -14,6 +14,20 @@ const os_productions = [
     credits: ['Programmation batterie', 'Mixage']
     },
   {
+    name: "A Propensity for Violence... Cruelty Enslavement",
+    band: "Antropofago",
+    country: "FR",
+    link: "",
+    style: "Death Brutal",
+    logo_url: "images/logos/antropofago_logo.png",
+    cover_url: "images/covers/Antropofago-A_Propensity_for_Violence_Cruelty_Enslavement.jpg",
+    facebook_url: "https://www.facebook.com/antropofago.deathmetal",
+    youtube_url: "https://www.youtube.com/channel/UCXpt6YsrxhlGuHovZQ2aKrA",
+    bandcamp_url: "https://antropofago.bandcamp.com",
+    release_year: 2021,
+    credits: ['Programmation batterie', 'Mixage']
+    },
+  {
     name: "Rites",
     band: "Mysticisme",
     country: "FR",
