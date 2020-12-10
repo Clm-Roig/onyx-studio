@@ -1,5 +1,19 @@
 const os_productions = [
   {
+    name: "Hollow Nights",
+    band: "The Solune",
+    country: "FR",
+    link: "https://thesolune.bandcamp.com/",
+    style: "Rock Alternatif",
+    logo_url: "images/logos/the_solune_logo.png",
+    cover_url: "images/covers/The_Solune-Hollow_Nights.jpg",
+    facebook_url: "https://www.facebook.com/s0lune",
+    youtube_url: "https://www.youtube.com/channel/UCEOFF45NmOqmIF1_qBy8U3g",
+    bandcamp_url: "https://thesolune.bandcamp.com/",
+    release_year: 2020,
+    credits: ['Programmation batterie', 'Enregistrement', 'Mixage']
+    },
+  {
     name: "A Propensity for Violence",
     band: "Antropofago",
     country: "FR",
