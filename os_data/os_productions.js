@@ -20,7 +20,7 @@ const os_productions = [
     link: "https://antropofago.bandcamp.com/album/a-propensity-for-violence",
     style: "Death Brutal",
     logo_url: "images/logos/antropofago_logo.png",
-    cover_url: "images/covers/Antropofago-A_Propensity_for_Violence.png",
+    cover_url: "images/covers/Antropofago-A_Propensity_for_Violence.jpg",
     facebook_url: "https://www.facebook.com/antropofago.deathmetal",
     youtube_url: "https://www.youtube.com/watch?v=yK160fu2cXI",
     bandcamp_url: "https://antropofago.bandcamp.com/album/a-propensity-for-violence",
