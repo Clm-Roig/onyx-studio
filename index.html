@@ -700,10 +700,9 @@ Satya Nadella
                     </span>
                     -->
         <span>
-          Copyright &copy;<script>
-            document.write(new Date().getFullYear());
+          Copyright &copy;<span class="current-year"></span>
 
-          </script> Tous droits réservés | Template par <a href="https://colorlib.com" target="_blank" style="color:#fff">Colorlib</a>
+          Tous droits réservés | Template par <a href="https://colorlib.com" target="_blank" style="color:#fff">Colorlib</a>
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </span>
         <br>
@@ -782,6 +781,12 @@ Satya Nadella
   <script src="os_data/os_logoBrickTemplate.js"></script>
   <script src="os_data/os_dataLoader.js"></script>
 
+  <!-- Replace current year script -->
+  <script>
+    const nodesToUpdate = document.getElementsByClassName('current-year');
+    [...nodesToUpdate].forEach((node) => node.textContent = new Date().getFullYear());
+
+  </script>
   <!-- Anti-spam script -->
   <script>
     function reveal() {
