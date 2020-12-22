@@ -3,7 +3,7 @@ var os_production_brick_template = `
 	<div class="item-folio"> 
 
 		<div class="item-folio__thumb">
-			<img src="$$cover_url$$" alt="$$band$$ - $$name$$ artwork" class="production-sample"> 
+			<img data-lazy="$$cover_url$$" alt="$$band$$ - $$name$$ artwork" class="production-sample"> 
 		</div> 
 
 		$$youtube_link$$

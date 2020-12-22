@@ -1,10 +1,11 @@
 class DataLoader {
   constructor() {
     // CONST 
-    this.nbRandomsProds = 10
+    this.nbRandomsProds = 99999 // load all prods 
     this.loadRandomProductions()
-    this.nbRandomsLogos = 100
+    this.nbRandomsLogos = 9999 // load all logos
     this.loadRandomLogos()
+    document.getElementById('nbProds').innerHTML = os_productions.length;
   }
 
   loadRandomProductions() {
@@ -20,7 +21,7 @@ class DataLoader {
     production_tmp.forEach((prod) => {
       this.random_productions += replaceInProdTemplate(prod)
     })
-    document.getElementById("productionsSample").innerHTML = this.random_productions
+    document.getElementById("productions-carousel").innerHTML = this.random_productions
   }
 
   loadRandomLogos() {
