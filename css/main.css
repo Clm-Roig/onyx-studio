@@ -2855,7 +2855,7 @@ h3.latest-prods {
 
 #productions-carousel {
   margin: auto;
-  /* Let 50px around for the prev and next buttons */
+  /* Let some space around for the prev and next buttons */
   width: calc(100% - 50px);
 }
 
