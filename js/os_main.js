@@ -14,6 +14,7 @@ $('#productions-carousel').slick({
     {
       breakpoint: 800,
       settings: {
+        dots: false,
         slidesToShow: 2,
         slidesToScroll: 2
       }
@@ -21,6 +22,7 @@ $('#productions-carousel').slick({
     {
       breakpoint: 550,
       settings: {
+        dots: false,
         slidesToShow: 1,
         slidesToScroll: 1
       }
