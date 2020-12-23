@@ -1592,7 +1592,7 @@ content: "/ ";
 }
 
 .header-nav__list a::before {
-  content: counter(ctr, decimal-leading-zero) ".";
+  content: '•';
   counter-increment: ctr;
   font-family: "metropolis-regular", sans-serif;
   font-size: 11px;
