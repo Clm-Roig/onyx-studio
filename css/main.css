@@ -2449,7 +2449,7 @@ h3.latest-prods {
 .s-latest-prod-videos .iframe-container {
   flex-basis: 30%;
   margin: 1rem;
-  min-width: 400px;
+  min-width: 300px;
   overflow: hidden;
   position: relative;
 }
@@ -2854,9 +2854,7 @@ h3.latest-prods {
 }
 
 #productions-carousel {
-  margin: auto;
-  /* Let some space around for the prev and next buttons */
-  width: calc(100% - 50px);
+  
 }
 
 #logosSample {
