@@ -1875,6 +1875,14 @@ content: "/ ";
   position: relative;
 }
 
+#logo_top {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  filter: drop-shadow(0 0 20px #fff);
+  width: 200px;
+}
+
 .home-content h1 {
   font-family: "montserrat-bold", sans-serif;
   font-size: 9rem;
@@ -2175,7 +2183,7 @@ html.no-csstransitions .home-content__main {
 * responsive:
 * home
 * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1600px) {
+@media only screen and (min-width: 1501px) {
   .home-content h1 {
     font-size: 8.8rem;
   }
@@ -2271,6 +2279,10 @@ html.no-csstransitions .home-content__main {
   .home-sidelinks {
     display: none;
   }
+
+  #logo_top {
+    width: 150px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -2321,6 +2333,10 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
+  #logo_top {
+    width: 100px;
+  }
+
   .home-content h1 {
     font-size: 5.4rem;
   }
