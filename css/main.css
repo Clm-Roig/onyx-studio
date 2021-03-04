@@ -2798,6 +2798,11 @@ h3.latest-prods {
   margin: 0;
 }
 
+.item-folio__style {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
 .item-folio__cat {
   color: #fff;
   font-family: "metropolis-regular", sans-serif;

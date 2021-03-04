@@ -15,7 +15,7 @@ var os_production_brick_template = `
 				$$name$$
 			</h3> 
 			<p class="item-folio__cat">
-				$$band$$ ($$release_year$$)
+				$$band$$ ($$release_year$$) <span class="item-folio__style">$$style$$</span>
 			</p> 
 		</div> 
 
@@ -48,6 +48,8 @@ function replaceInProdTemplate(production) {
       } else if (key == "credits") {
         value = value.join(", ")
         final_brick = final_brick.replace("$$credits$$", value)
+      } else if (key == "style") {
+        final_brick = final_brick.replace("$$style$$", " - " + value)
       } else {
         let regex = new RegExp('\\$\\$' + key + '\\$\\$', 'g')
         final_brick = final_brick.replace(regex, value)
