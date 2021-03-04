@@ -12,7 +12,7 @@ const os_productions = [
     bandcamp_url: "https://thesolune.bandcamp.com/album/hollow-nights",
     release_year: 2020,
     credits: ['Programmation batterie', 'Enregistrement', 'Mixage']
-    },
+  },
   {
     name: "A Propensity for Violence",
     band: "Antropofago",
@@ -26,7 +26,7 @@ const os_productions = [
     bandcamp_url: "https://antropofago.bandcamp.com/album/a-propensity-for-violence",
     release_year: 2018,
     credits: ['Programmation batterie', 'Mixage']
-    },
+  },
   {
     name: "A Propensity for Violence... Cruelty Enslavement",
     band: "Antropofago",
@@ -40,7 +40,7 @@ const os_productions = [
     bandcamp_url: "https://antropofago.bandcamp.com",
     release_year: 2021,
     credits: ['Programmation batterie', 'Mixage']
-    },
+  },
   {
     name: "Rites",
     band: "Mysticisme",
@@ -54,7 +54,7 @@ const os_productions = [
     bandcamp_url: "https://endlessdecrepitudeprod.bandcamp.com/album/rites",
     release_year: 2016,
     credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
-    },
+  },
   {
     name: "Le Naufrage",
     band: "Opprobre",
@@ -68,7 +68,7 @@ const os_productions = [
     bandcamp_url: "https://endlessdecrepitudeprod.bandcamp.com/album/le-naufrage",
     release_year: 2017,
     credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
-    },
+  },
   {
     name: "The Perpetual Motion",
     band: "Devolution",
@@ -82,21 +82,21 @@ const os_productions = [
     bandcamp_url: "",
     release_year: 2015,
     credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
-    },
-    /*{
-        name: "Tales of Aeria A Steampunk Story",
-        band: "Nick Dawson",
-        country: "FR",
-        link: "",
-        style: "Soundtrack",
-        logo_url: "",
-        cover_url: "",
-        facebook_url: "",
-        youtube_url: "",
-        bandcamp_url: "",
-        release_year: "",
-        credits: ['Mastering']
-    },*/
+  },
+  /*{
+      name: "Tales of Aeria A Steampunk Story",
+      band: "Nick Dawson",
+      country: "FR",
+      link: "",
+      style: "Soundtrack",
+      logo_url: "",
+      cover_url: "",
+      facebook_url: "",
+      youtube_url: "",
+      bandcamp_url: "",
+      release_year: "",
+      credits: ['Mastering']
+  },*/
   {
     name: "Valè",
     band: "Splendor Noctis",
@@ -110,7 +110,7 @@ const os_productions = [
     bandcamp_url: "https://splendornoctis.bandcamp.com/",
     release_year: "2020",
     credits: ['Mix', 'Mastering']
-    },
+  },
   {
     name: "Primary Instinct",
     band: "Eternal Hunt",
@@ -124,7 +124,7 @@ const os_productions = [
     bandcamp_url: "https://eternalhunt.bandcamp.com/album/primary-instinct",
     release_year: 2019,
     credits: ['Mixage', 'Mastering']
-    },
+  },
   {
     name: "Wintersongs (remastered)",
     band: "Solventis",
@@ -138,7 +138,7 @@ const os_productions = [
     bandcamp_url: "https://solventis.bandcamp.com/releases",
     release_year: 2020,
     credits: ['Mastering']
-    },
+  },
   {
     name: "Of Dusk and Dawns",
     band: "Solventis",
@@ -152,7 +152,7 @@ const os_productions = [
     bandcamp_url: "https://solventis.bandcamp.com/album/of-dusk-and-dawns",
     release_year: 2020,
     credits: ['Enregistrement', 'Mixage']
-    },
+  },
   {
     name: "Leaks (single)",
     band: "Croon",
@@ -166,7 +166,7 @@ const os_productions = [
     bandcamp_url: "https://croon.bandcamp.com/track/leaks",
     release_year: 2020,
     credits: ['Mastering']
-    },
+  },
   {
     name: "Unauthorized Surveillance (single)",
     band: "Croon",
@@ -180,7 +180,7 @@ const os_productions = [
     bandcamp_url: "https://croon.bandcamp.com/track/unauthorized-surveillance",
     release_year: 2020,
     credits: ['Mastering']
-    },
+  },
   {
     name: "Paul on Acid (single)",
     band: "Croon",
@@ -194,7 +194,7 @@ const os_productions = [
     bandcamp_url: "https://croon.bandcamp.com/track/paul-on-acid",
     release_year: 2020,
     credits: ['Mastering']
-    },
+  },
   {
     name: "Them! (single)",
     band: "Croon",
@@ -208,7 +208,7 @@ const os_productions = [
     bandcamp_url: "https://croon.bandcamp.com/track/them",
     release_year: 2020,
     credits: ['Stems Mastering']
-    },
+  },
   {
     name: "Le Silence",
     band: "Sunnudagr",
@@ -222,5 +222,5 @@ const os_productions = [
     bandcamp_url: "https://sunnudagr.bandcamp.com/album/le-silence",
     release_year: 2020,
     credits: ['Réamping', 'Mixage']
-    },
+  },
 ];

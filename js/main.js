@@ -3,16 +3,16 @@
  *
  * ------------------------------------------------------------------- */
 
-(function($) {
+(function ($) {
 
     "use strict";
-    
+
     var cfg = {
-        scrollDuration : 400, // smoothscroll duration
-        mailChimpURL   : ''   // mailchimp url
+        scrollDuration: 400, // smoothscroll duration
+        mailChimpURL: ''   // mailchimp url
     },
 
-    $WIN = $(window);
+        $WIN = $(window);
 
     // Add the User Agent to the <html>
     // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
@@ -20,38 +20,38 @@
     doc.setAttribute('data-useragent', navigator.userAgent);
 
 
-   /* Preloader
-    * -------------------------------------------------- */
-    var clPreloader = function() {
-        
+    /* Preloader
+     * -------------------------------------------------- */
+    var clPreloader = function () {
+
         $("html").addClass('cl-preload');
 
-        $WIN.on('load', function() {
+        $WIN.on('load', function () {
 
             //force page scroll position to top at page refresh
             // $('html, body').animate({ scrollTop: 0 }, 'normal');
 
             // will first fade out the loading animation 
-            $("#loader").fadeOut("slow", function() {
+            $("#loader").fadeOut("slow", function () {
                 // will fade out the whole DIV that covers the website.
                 $("#preloader").delay(150).fadeOut("slow");
-            }); 
-            
+            });
+
             // for hero content animations 
             $("html").removeClass('cl-preload');
             $("html").addClass('cl-loaded');
-        
+
         });
     };
 
 
-   /* Menu on Scrolldown
-    * ------------------------------------------------------ */
-    var clMenuOnScrolldown = function() {
-        
+    /* Menu on Scrolldown
+     * ------------------------------------------------------ */
+    var clMenuOnScrolldown = function () {
+
         var menuTrigger = $('.header-menu-toggle');
 
-        $WIN.on('scroll', function() {
+        $WIN.on('scroll', function () {
 
             if ($WIN.scrollTop() > 150) {
                 menuTrigger.addClass('opaque');
@@ -64,31 +64,31 @@
     };
 
 
-   /* OffCanvas Menu
-    * ------------------------------------------------------ */
-    var clOffCanvas = function() {
+    /* OffCanvas Menu
+     * ------------------------------------------------------ */
+    var clOffCanvas = function () {
 
-        var menuTrigger     = $('.header-menu-toggle'),
-            nav             = $('.header-nav'),
-            closeButton     = nav.find('.header-nav__close'),
-            siteBody        = $('body'),
-            mainContents    = $('section, footer');
+        var menuTrigger = $('.header-menu-toggle'),
+            nav = $('.header-nav'),
+            closeButton = nav.find('.header-nav__close'),
+            siteBody = $('body'),
+            mainContents = $('section, footer');
 
         // open-close menu by clicking on the menu icon
-        menuTrigger.on('click', function(e){
+        menuTrigger.on('click', function (e) {
             e.preventDefault();
             siteBody.toggleClass('menu-is-open');
         });
 
         // close menu by clicking the close button
-        closeButton.on('click', function(e){
+        closeButton.on('click', function (e) {
             e.preventDefault();
             menuTrigger.trigger('click');
         });
 
         // close menu clicking outside the menu itself
-        siteBody.on('click', function(e){
-            if( !$(e.target).is('.header-nav, .header-nav__content, .header-menu-toggle, .header-menu-toggle span') ) {
+        siteBody.on('click', function (e) {
+            if (!$(e.target).is('.header-nav, .header-nav__content, .header-menu-toggle, .header-menu-toggle span')) {
                 siteBody.removeClass('menu-is-open');
             }
         });
@@ -96,31 +96,31 @@
     };
 
 
-   /* photoswipe
-    * ----------------------------------------------------- */
-    var clPhotoswipe = function() {
+    /* photoswipe
+     * ----------------------------------------------------- */
+    var clPhotoswipe = function () {
         var items = [],
             $pswp = $('.pswp')[0],
             $folioItems = $('.item-folio');
 
         // get items
-        $folioItems.each( function(i) {
+        $folioItems.each(function (i) {
 
             var $folio = $(this),
-                $thumbLink =  $folio.find('.thumb-link'),
+                $thumbLink = $folio.find('.thumb-link'),
                 $title = $folio.find('.item-folio__title'),
                 $caption = $folio.find('.item-folio__caption'),
                 $titleText = '<h4>' + $.trim($title.html()) + '</h4>',
                 $captionText = $.trim($caption.html()),
                 $href = $thumbLink.attr('href'),
                 $size = $thumbLink.data('size').split('x'),
-                $width  = $size[0],
+                $width = $size[0],
                 $height = $size[1];
-        
+
             var item = {
-                src  : $href,
-                w    : $width,
-                h    : $height
+                src: $href,
+                w: $width,
+                h: $height
             }
 
             if ($caption.length > 0) {
@@ -131,9 +131,9 @@
         });
 
         // bind click event
-        $folioItems.each(function(i) {
+        $folioItems.each(function (i) {
 
-            $(this).on('click', function(e) {
+            $(this).on('click', function (e) {
                 e.preventDefault();
                 var options = {
                     index: i,
@@ -149,16 +149,16 @@
     };
 
 
-   /* Stat Counter
-    * ------------------------------------------------------ */
-    var clStatCount = function() {
-        
+    /* Stat Counter
+     * ------------------------------------------------------ */
+    var clStatCount = function () {
+
         var statSection = $(".s-stats"),
             stats = $(".stats__count");
 
         statSection.waypoint({
 
-            handler: function(direction) {
+            handler: function (direction) {
 
                 if (direction === "down") {
 
@@ -174,7 +174,7 @@
                         });
                     });
 
-                } 
+                }
 
                 // trigger once only
                 this.destroy();
@@ -187,10 +187,10 @@
     };
 
 
-   /* Masonry
-    * ---------------------------------------------------- */ 
+    /* Masonry
+     * ---------------------------------------------------- */
     var clMasonryFolio = function () {
-        
+
         var containerBricks = $('.masonry');
 
         containerBricks.imagesLoaded(function () {
@@ -201,7 +201,7 @@
         });
 
         // layout Masonry after each image loads
-        containerBricks.imagesLoaded().progress( function() {
+        containerBricks.imagesLoaded().progress(function () {
             containerBricks.masonry('layout');
         });
     };
@@ -209,8 +209,8 @@
 
     /* slick slider
      * ------------------------------------------------------ */
-    var clSlickSlider = function() {
-        
+    var clSlickSlider = function () {
+
         $('.testimonials__slider').slick({
             arrows: false,
             dots: true,
@@ -232,16 +232,16 @@
     };
 
 
-   /* Smooth Scrolling
-    * ------------------------------------------------------ */
-    var clSmoothScroll = function() {
-        
+    /* Smooth Scrolling
+     * ------------------------------------------------------ */
+    var clSmoothScroll = function () {
+
         $('.smoothscroll').on('click', function (e) {
             var target = this.hash,
-            $target    = $(target);
-            
-                e.preventDefault();
-                e.stopPropagation();
+                $target = $(target);
+
+            e.preventDefault();
+            e.stopPropagation();
 
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top
@@ -259,29 +259,29 @@
     };
 
 
-   /* Placeholder Plugin Settings
-    * ------------------------------------------------------ */
-    var clPlaceholder = function() {
-        $('input, textarea, select').placeholder();  
+    /* Placeholder Plugin Settings
+     * ------------------------------------------------------ */
+    var clPlaceholder = function () {
+        $('input, textarea, select').placeholder();
     };
 
 
-   /* Alert Boxes
-    * ------------------------------------------------------ */
-    var clAlertBoxes = function() {
+    /* Alert Boxes
+     * ------------------------------------------------------ */
+    var clAlertBoxes = function () {
 
-        $('.alert-box').on('click', '.alert-box__close', function() {
+        $('.alert-box').on('click', '.alert-box__close', function () {
             $(this).parent().fadeOut(500);
-        }); 
+        });
 
     };
 
 
-   /* Animate On Scroll
-    * ------------------------------------------------------ */
-    var clAOS = function() {
-        
-        AOS.init( {
+    /* Animate On Scroll
+     * ------------------------------------------------------ */
+    var clAOS = function () {
+
+        AOS.init({
             offset: 200,
             duration: 600,
             easing: 'ease-in-sine',
@@ -293,10 +293,10 @@
     };
 
 
-   /* AjaxChimp
-    * ------------------------------------------------------ */
-    var clAjaxChimp = function() {
-        
+    /* AjaxChimp
+     * ------------------------------------------------------ */
+    var clAjaxChimp = function () {
+
         $('#mc-form').ajaxChimp({
             language: 'es',
             url: cfg.mailChimpURL
@@ -321,23 +321,23 @@
             3: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.',
             4: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.',
             5: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.'
-        } 
+        }
 
     };
 
 
-   /* Back to Top
-    * ------------------------------------------------------ */
-    var clBackToTop = function() {
-        
-        var pxShow  = 500,         // height on which the button will show
-        fadeInTime  = 400,         // how slow/fast you want the button to show
-        fadeOutTime = 400,         // how slow/fast you want the button to hide
-        scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
-        goTopButton = $(".cl-go-top")
-        
+    /* Back to Top
+     * ------------------------------------------------------ */
+    var clBackToTop = function () {
+
+        var pxShow = 500,         // height on which the button will show
+            fadeInTime = 400,         // how slow/fast you want the button to show
+            fadeOutTime = 400,         // how slow/fast you want the button to hide
+            scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
+            goTopButton = $(".cl-go-top")
+
         // Show or hide the sticky footer button
-        $(window).on('scroll', function() {
+        $(window).on('scroll', function () {
             if ($(window).scrollTop() >= pxShow) {
                 goTopButton.fadeIn(fadeInTime);
             } else {
@@ -347,10 +347,10 @@
     };
 
 
-   /* Initialize
-    * ------------------------------------------------------ */
+    /* Initialize
+     * ------------------------------------------------------ */
     (function clInit() {
-        
+
         clPreloader();
         clMenuOnScrolldown();
         clOffCanvas();
@@ -366,5 +366,5 @@
         clBackToTop();
 
     })();
-        
+
 })(jQuery);
