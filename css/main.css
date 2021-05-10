@@ -2555,6 +2555,7 @@ h3.latest-prods {
 .price {
   background-color: #a53035;
   color: #dddddd;
+  font-size: 1.8rem;
 }
 
 .big-price {
@@ -2563,12 +2564,17 @@ h3.latest-prods {
 }
 
 .price-table {
+  border-collapse: collapse;
   max-width: 150px;
+}
+
+.price-table tr, .price-table th, .price-table td {
+  border: 1px solid #dddddd;
 }
 
 .price-table td {
   min-width: 40px;
-  padding: 0;
+  padding: 0.8rem;
   text-align: center;
 }
 
