@@ -223,4 +223,18 @@ const os_productions = [
     release_year: 2020,
     credits: ['Réamping', 'Mixage']
   },
+  {
+    name: "Leaving...",
+    band: "Tara's Folk",
+    country: "FR",
+    link: "",
+    genre: "Folk",
+    logo_url: "",
+    cover_url: "images/covers/Tara's_Folk-Leaving....jpg",
+    facebook_url: "https://www.facebook.com/TarasFolkOfficiel",
+    youtube_url: "https://www.youtube.com/channel/UCenEE51OAsP96eCcx2JiB5w",
+    bandcamp_url: "",
+    release_year: 2021,
+    credits: ['Mastering']
+  },
 ];
