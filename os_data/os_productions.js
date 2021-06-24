@@ -77,7 +77,7 @@ const os_productions = [
     genre: "Death Black Metal",
     logo_url: "images/logos/devolution_logo.png",
     cover_url: "images/covers/Devolution-The_Perpetual_Motion.jpg",
-    facebook_url: "https://www.facebook.com/devolution.dbm",
+    facebook_url: "https://www.facebook.com/devolution.band.fr",
     youtube_url: "https://www.youtube.com/watch?v=3mD6pFnvNsA",
     bandcamp_url: "",
     release_year: 2015,
@@ -236,5 +236,19 @@ const os_productions = [
     bandcamp_url: "",
     release_year: 2021,
     credits: ['Mastering']
+  },
+  {
+    name: "Consumer",
+    band: "Devolution",
+    country: "FR",
+    link: "https://youtu.be/zqSl4bUHViY",
+    genre: "Death Black Metal",
+    logo_url: "images/logos/devolution_logo.png",
+    cover_url: "images/covers/Devolution-Consumer.jpg",
+    facebook_url: "https://www.facebook.com/devolution.band.fr",
+    youtube_url: "https://youtu.be/zqSl4bUHViY",
+    bandcamp_url: "https://devolution-band.bandcamp.com",
+    release_year: 2021,
+    credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
   },
 ];
