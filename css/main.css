@@ -2280,7 +2280,7 @@ h3.latest-prods {
 }
 
 .s-latest-prod-videos .iframe-container {
-  flex-basis: 30%;
+  flex-basis: 40%;
   margin: 1rem;
   min-width: 300px;
   overflow: hidden;
