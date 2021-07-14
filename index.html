@@ -877,12 +877,12 @@ Satya Nadella
       <div class="col-full contact-main" data-aos="fade-up">
         <p>
           <button onclick="reveal()" id="reveal-email">Afficher email</button>
-          <a href="" id="contact-email" class="contact-email"
-            style="visibility: hidden; opacity: 0; transition: opacity 1s; width: 0"></a>
+          <a href="" id="contact-email" class="contact-email is-invisible"
+            style="opacity: 0; transition: opacity 1s; width: 0"></a>
           <input id="contact-email-input" type="text" style="position:absolute;width:0;height:0;padding:0;margin:0" />
           <!-- Hack to hide input -->
-          <button id="copy-email-btn" onclick="copyEmail()"
-            style="vertical-align:middle; visibility: hidden; opacity: 0; transition: opacity 1s; width: 0">Copier</button>
+          <button id="copy-email-btn" onclick="copyEmail()" class="is-invisible"
+            style="vertical-align:middle;opacity: 0; transition: opacity 1s; width: 0">Copier</button>
           <!--<span class="contact-number">+1 (917) 123 456  /  +1 (917) 333 987</span>-->
         </p>
       </div> <!-- end contact-main -->
