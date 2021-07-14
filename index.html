@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tabs.css">
 
     <!-- Icons
 ================================================== -->
@@ -448,156 +449,102 @@
                     <br /> Dans tous les cas, <a href="#contact">contactez-moi</a> pour me présenter votre projet et nous en discuterons plus en détail.
                 </p>
 
-                <div class="row blocks-list block-1-2 block-m-1-2 block-tab-full">
-
-                    <div class="col-block block-item" data-aos="fade-up">
-                        <div class="service-text">
-                            <h3><i class="fas fa-chevron-right"></i> Enregistrement</h3>
-                            <div style="flex-direction: column;">
-                                <p style="margin-bottom:3rem">
-                                    <span class="price big-price">25€/h</span> L’Onyx Studio vous accueille pour vos enregistrements (hors batterie). Je peuxs également me déplacer.
-                                </p>
-
-                                <p>Je dispose de plusieurs micros et je peux également en emprunter selon vos besoins. Au-delà du simple enregistrement, c’est un véritable accompagnement qui vous est proposé lors de la prise de son.
-                                </p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-block block-item" data-aos="fade-up">
-                        <div class="service-text">
-                            <h3><i class="fas fa-chevron-right"></i> Réamping</h3>
-                            <div style="flex-direction: column; align-items:flex-start;">
-                                <p style="margin-bottom: 3rem;">Jusqu’à 4 types de piste à réamper (guitare rythmique, guitare clean, guitare lead, basse).
-                                </p>
-                                <p class="no-margin-bottom"><b>Tarif dégressif :</b></p>
-                                <table class="price-table">
-                                    <tr>
-                                        <td>
-                                            < 10min</td>
-                                                <td>→</td>
-                                                <td><span class="price">50€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>10-20min</td>
-                                        <td>→</td>
-                                        <td><span class="price">75€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>20-30min</td>
-                                        <td>→</td>
-                                        <td><span class="price">100€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>30-40min</td>
-                                        <td>→</td>
-                                        <td><span class="price">120€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>40-50min</td>
-                                        <td>→</td>
-                                        <td><span class="price">140€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>50-60min</td>
-                                        <td>→</td>
-                                        <td><span class="price">155€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>> 60min</td>
-                                        <td>→</td>
-                                        <td><span class="price">165€</span></td>
-                                    </tr>
-                                </table>
-
-                            </div>
-                        </div>
-                    </div>
-
+                <!-- Tab links -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Enregistrement')" id="defaultTabOpen">Enregistrement</button>
+                    <button class="tablinks" onclick="openTab(event, 'Réamping')">Réamping</button>
+                    <button class="tablinks" onclick="openTab(event, 'Mixage')">Mixage</button>
+                    <button class="tablinks" onclick="openTab(event, 'Mastering')">Mastering</button>
                 </div>
 
-                <div class="row blocks-list block-1-2 block-m-1-2 block-tab-full">
+                <!-- Tab content -->
+                <div id="Enregistrement" class="tabcontent">
+                    <h3><i class="fas fa-chevron-right"></i> Enregistrement</h3>
+                    <p>
+                        <span class="price big-price">25€/h</span> L’Onyx Studio vous accueille pour vos enregistrements (hors batterie). Je peux également me déplacer.
+                    </p>
+                    <p>Je dispose de plusieurs micros et je peux également en emprunter selon vos besoins. Au-delà du simple enregistrement, c’est un véritable accompagnement qui vous est proposé lors de la prise de son.
+                </div>
 
-                    <div class="col-block block-item" data-aos="fade-up">
-                        <div class="service-text">
-                            <h3><i class="fas fa-chevron-right"></i> Mixage</h3>
-                            <div style="flex-direction: column;">
-                                <p style="margin-bottom: 1rem;">
-                                    <span class="price big-price">~900€</span> pour un album d’environ 8-10 morceaux de 4-5 minutes avec une configuration classique (2 guitares rythmiques, 1 basse, 1 chant, 1 guitare lead et une batterie). Chaque mix
-                                    est unique et doit prendre en compte de nombreux paramètres :
-                                </p>
-                                <ul>
-                                    <li>Quel est le style des morceaux ?</li>
-                                    <li>Combien d'instruments compte chaque morceau ? Y a-t-il des arrangements ou effets particuliers ?
-                                    </li>
-                                    <li>Est-ce que les guitares et la basse doivent être réampées ?</li>
-                                    <li>La batterie est-elle acoustique ou doit-elle être programmée ?</li>
-                                    <li>Combien y a-t-il de morceaux ? De quelle durée ?</li>
-                                </ul>
-                                <p>De manière générale, rentrez en contact avec moi <b>avant</b> de débuter l'enregistrement de votre projet : nous pourrons alors discuter avec vous des éléments dont j'aurai besoin pour mixer votre projet.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div id="Réamping" class="tabcontent">
+                    <h3><i class="fas fa-chevron-right"></i> Réamping</h3>
+                    <p style="margin-bottom: 3rem;">Jusqu’à 4 types de piste à réamper (guitare rythmique, guitare clean, guitare lead, basse).
+                    </p>
+                    <p class="no-margin-bottom"><b>Tarif dégressif :</b></p>
+                    <table class="price-table">
+                        <tr>
+                            <td>
+                                < 10min</td>
+                                    <td>10-20min</td>
+                                    <td>20-30min</td>
+                                    <td>30-40min</td>
+                                    <td>40-50min</td>
+                                    <td>50-60min</td>
+                                    <td>> 60min</td>
+                        </tr>
+                        <tr>
+                            <td><span class="price">50€</span></td>
+                            <td><span class="price">75€</span></td>
+                            <td><span class="price">120€</span></td>
+                            <td><span class="price">100€</span></td>
+                            <td><span class="price">140€</span></td>
+                            <td><span class="price">155€</span></td>
+                            <td><span class="price">165€</span></td>
+                        </tr>
+                    </table>
+                </div>
 
-                    <div class="col-block block-item" data-aos="fade-up">
-                        <div class="service-text">
-                            <h3><i class="fas fa-chevron-right"></i> Mastering</h3>
-                            <div style="display:block;">
-                                <p style="margin-bottom: 1rem;">Je m'occupe d'insérer les tags dans vos morceaux (numéro de piste, titre, artiste, année, genre). Plusieurs fichiers vous seront livrés :</p>
-                                <ul>
-                                    <li>Wav 24 bits au volume CD (généralement entre -8 et -14 LUFS)</li>
-                                    <li>MP3 320 kbit/s au volume CD</li>
-                                    <li>WAV 24 bits au volume streaming (environ -14 LUFS)</li>
-                                </ul>
-                                </p>
-                                <p class="no-margin-bottom"><b>Tarif dégressif :</b></p>
-                                <table class="price-table">
-                                    <tr>
-                                        <td>
-                                            < 10min</td>
-                                                <td>→</td>
-                                                <td><span class="price">40€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>10-20min</td>
-                                        <td>→</td>
-                                        <td><span class="price">75€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>20-30min</td>
-                                        <td>→</td>
-                                        <td><span class="price">105€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>30-40min</td>
-                                        <td>→</td>
-                                        <td><span class="price">130€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>40-50min</td>
-                                        <td>→</td>
-                                        <td><span class="price">150€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>50-60min</td>
-                                        <td>→</td>
-                                        <td><span class="price">165€</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>> 60min</td>
-                                        <td>→</td>
-                                        <td><span class="price">175€</span></td>
-                                    </tr>
-                                </table>
+                <div id="Mixage" class="tabcontent">
+                    <h3><i class="fas fa-chevron-right"></i> Mixage</h3>
+                    <p style="margin-bottom: 1rem;">
+                        <span class="price big-price">~900€</span> pour un album d’environ 8-10 morceaux de 4-5 minutes avec une configuration classique (2 guitares rythmiques, 1 basse, 1 chant, 1 guitare lead et une batterie). Chaque mix est unique et
+                        doit prendre en compte de nombreux paramètres :
+                    </p>
+                    <ul>
+                        <li>Quel est le style des morceaux ?</li>
+                        <li>Combien d'instruments compte chaque morceau ? Y a-t-il des arrangements ou effets particuliers ?
+                        </li>
+                        <li>Est-ce que les guitares et la basse doivent être réampées ?</li>
+                        <li>La batterie est-elle acoustique ou doit-elle être programmée ?</li>
+                        <li>Combien y a-t-il de morceaux ? De quelle durée ?</li>
+                    </ul>
+                    <p>De manière générale, rentrez en contact avec moi <b>avant</b> de débuter l'enregistrement de votre projet : nous pourrons alors discuter avec vous des éléments dont j'aurai besoin pour mixer votre projet.
+                    </p>
+                </div>
 
-                                <p>Livraison supplémentaire d’un fichier DDP prêt à être envoyé à l’usine de pressage → <span class="price">20€</span></p>
-                            </div>
-                        </div>
-
-                    </div>
-
+                <div id="Mastering" class="tabcontent">
+                    <h3><i class="fas fa-chevron-right"></i> Mastering</h3>
+                    <p style="margin-bottom: 1rem;">Je m'occupe d'insérer les tags dans vos morceaux (numéro de piste, titre, artiste, année, genre). Plusieurs fichiers vous seront livrés :</p>
+                    <ul>
+                        <li>Wav 24 bits au volume CD (généralement entre -8 et -14 LUFS)</li>
+                        <li>MP3 320 kbit/s au volume CD</li>
+                        <li>WAV 24 bits au volume streaming (environ -14 LUFS)</li>
+                    </ul>
+                    </p>
+                    <p class="no-margin-bottom"><b>Tarif dégressif :</b></p>
+                    <table class="price-table">
+                        <tr>
+                            <td>
+                                < 10min</td>
+                                    <td>10-20min</td>
+                                    <td>20-30min</td>
+                                    <td>30-40min</td>
+                                    <td>40-50min</td>
+                                    <td>50-60min</td>
+                                    <td>> 60min</td>
+                        </tr>
+                        <tr>
+                            <td><span class="price">40€</span></td>
+                            <td><span class="price">75€</span></td>
+                            <td><span class="price">105€</span></td>
+                            <td><span class="price">130€</span></td>
+                            <td><span class="price">150€</span></td>
+                            <td><span class="price">165€</span></td>
+                            <td><span class="price">175€</span></td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <p>Livraison supplémentaire d’un fichier DDP prêt à être envoyé à l’usine de pressage → <span class="price">20€</span></p>
                 </div>
             </div>
 
@@ -1014,6 +961,7 @@ Satya Nadella
     <!-- Load custom scripts -->
     <script type="text/javascript" src="js/os_custom_scripts/replace_current_year.js"></script>
     <script type="text/javascript" src="js/os_custom_scripts/anti_spam.js"></script>
+    <script type="text/javascript" src="js/os_custom_scripts/tabs.js"></script>
 
 
 </body>
