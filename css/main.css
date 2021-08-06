@@ -208,6 +208,7 @@ p.lead {
   margin: auto;
   margin-bottom: 1.5rem;
   max-width: 500px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
