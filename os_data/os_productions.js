@@ -1,45 +1,17 @@
 const os_productions = [
   {
-    name: "Hollow Nights",
-    band: "The Solune",
+    name: "The Perpetual Motion",
+    band: "Devolution",
     country: "FR",
-    link: "https://thesolune.bandcamp.com/album/hollow-nights",
-    genre: "Rock Alternatif",
-    logo_url: "images/logos/the_solune_logo.png",
-    cover_url: "images/covers/The_Solune-Hollow_Nights.jpg",
-    facebook_url: "https://www.facebook.com/s0lune",
-    youtube_url: "https://www.youtube.com/watch?v=WphQWBMHbO8",
-    bandcamp_url: "https://thesolune.bandcamp.com/album/hollow-nights",
-    release_year: 2020,
-    credits: ['Programmation batterie', 'Enregistrement', 'Mixage']
-  },
-  {
-    name: "A Propensity for Violence",
-    band: "Antropofago",
-    country: "FR",
-    link: "https://antropofago.bandcamp.com/album/a-propensity-for-violence",
-    genre: "Brutal Death Metal Technique",
-    logo_url: "images/logos/antropofago_logo.png",
-    cover_url: "images/covers/Antropofago-A_Propensity_for_Violence.jpg",
-    facebook_url: "https://www.facebook.com/antropofago.deathmetal",
-    youtube_url: "https://www.youtube.com/watch?v=yK160fu2cXI",
-    bandcamp_url: "https://antropofago.bandcamp.com/album/a-propensity-for-violence",
-    release_year: 2018,
-    credits: ['Programmation batterie', 'Mixage']
-  },
-  {
-    name: "A Propensity for Violence... Cruelty Enslavement",
-    band: "Antropofago",
-    country: "FR",
-    link: "",
-    genre: "Brutal Death Metal Technique",
-    logo_url: "images/logos/antropofago_logo.png",
-    cover_url: "images/covers/Antropofago-A_Propensity_for_Violence_Cruelty_Enslavement.jpg",
-    facebook_url: "https://www.facebook.com/antropofago.deathmetal",
-    youtube_url: "https://www.youtube.com/channel/UCXpt6YsrxhlGuHovZQ2aKrA",
-    bandcamp_url: "https://antropofago.bandcamp.com",
-    release_year: 2021,
-    credits: ['Programmation batterie', 'Mixage']
+    link: "https://www.youtube.com/watch?v=3mD6pFnvNsA",
+    genre: "Death Black Metal",
+    logo_url: "images/logos/devolution_logo.png",
+    cover_url: "images/covers/Devolution-The_Perpetual_Motion.jpg",
+    facebook_url: "https://www.facebook.com/devolution.band.fr",
+    youtube_url: "https://www.youtube.com/watch?v=3mD6pFnvNsA",
+    bandcamp_url: "",
+    release_year: 2015,
+    credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
   },
   {
     name: "Rites",
@@ -70,18 +42,18 @@ const os_productions = [
     credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
   },
   {
-    name: "The Perpetual Motion",
-    band: "Devolution",
+    name: "A Propensity for Violence",
+    band: "Antropofago",
     country: "FR",
-    link: "https://www.youtube.com/watch?v=3mD6pFnvNsA",
-    genre: "Death Black Metal",
-    logo_url: "images/logos/devolution_logo.png",
-    cover_url: "images/covers/Devolution-The_Perpetual_Motion.jpg",
-    facebook_url: "https://www.facebook.com/devolution.band.fr",
-    youtube_url: "https://www.youtube.com/watch?v=3mD6pFnvNsA",
-    bandcamp_url: "",
-    release_year: 2015,
-    credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
+    link: "https://antropofago.bandcamp.com/album/a-propensity-for-violence",
+    genre: "Brutal Death Metal Technique",
+    logo_url: "images/logos/antropofago_logo.png",
+    cover_url: "images/covers/Antropofago-A_Propensity_for_Violence.jpg",
+    facebook_url: "https://www.facebook.com/antropofago.deathmetal",
+    youtube_url: "https://www.youtube.com/watch?v=yK160fu2cXI",
+    bandcamp_url: "https://antropofago.bandcamp.com/album/a-propensity-for-violence",
+    release_year: 2018,
+    credits: ['Programmation batterie', 'Mixage']
   },
   /*{
       name: "Tales of Aeria A Steampunk Story",
@@ -98,20 +70,6 @@ const os_productions = [
       credits: ['Mastering']
   },*/
   // {
-  //   name: "Valè",
-  //   band: "Splendor Noctis",
-  //   country: "FR",
-  //   link: "",
-  //   genre: "Dark Folk",
-  //   logo_url: "images/logos/splendor_noctis_logo.png",
-  //   cover_url: "images/covers/Splendor_Noctis-Valè.jpg",
-  //   facebook_url: "https://www.facebook.com/splendornoctis",
-  //   youtube_url: "https://www.youtube.com/channel/UCz2a416hkN2g7h1pJzlJc-Q",
-  //   bandcamp_url: "https://splendornoctis.bandcamp.com/",
-  //   release_year: "2020",
-  //   credits: ['Mastering']
-  // },
-  // {
   //   name: "Primary Instinct",
   //   band: "Eternal Hunt",
   //   country: "FR",
@@ -124,6 +82,20 @@ const os_productions = [
   //   bandcamp_url: "https://eternalhunt.bandcamp.com/album/primary-instinct",
   //   release_year: 2019,
   //   credits: ['Mixage', 'Mastering']
+  // },
+  // {
+  //   name: "Valè",
+  //   band: "Splendor Noctis",
+  //   country: "FR",
+  //   link: "",
+  //   genre: "Dark Folk",
+  //   logo_url: "images/logos/splendor_noctis_logo.png",
+  //   cover_url: "images/covers/Splendor_Noctis-Valè.jpg",
+  //   facebook_url: "https://www.facebook.com/splendornoctis",
+  //   youtube_url: "https://www.youtube.com/channel/UCz2a416hkN2g7h1pJzlJc-Q",
+  //   bandcamp_url: "https://splendornoctis.bandcamp.com/",
+  //   release_year: "2020",
+  //   credits: ['Mastering']
   // },
   // {
   //   name: "Wintersongs (remastered)",
@@ -196,6 +168,20 @@ const os_productions = [
     credits: ['Stems Mastering']
   },
   {
+    name: "Hollow Nights",
+    band: "The Solune",
+    country: "FR",
+    link: "https://thesolune.bandcamp.com/album/hollow-nights",
+    genre: "Rock Alternatif",
+    logo_url: "images/logos/the_solune_logo.png",
+    cover_url: "images/covers/The_Solune-Hollow_Nights.jpg",
+    facebook_url: "https://www.facebook.com/s0lune",
+    youtube_url: "https://www.youtube.com/watch?v=WphQWBMHbO8",
+    bandcamp_url: "https://thesolune.bandcamp.com/album/hollow-nights",
+    release_year: 2020,
+    credits: ['Programmation batterie', 'Enregistrement', 'Mixage']
+  },
+  {
     name: "Le Silence",
     band: "Sunnudagr",
     country: "FR",
@@ -208,6 +194,20 @@ const os_productions = [
     bandcamp_url: "https://sunnudagr.bandcamp.com/album/le-silence",
     release_year: 2020,
     credits: ['Réamping', 'Mixage']
+  },
+  {
+    name: "A Propensity for Violence... Cruelty Enslavement",
+    band: "Antropofago",
+    country: "FR",
+    link: "",
+    genre: "Brutal Death Metal Technique",
+    logo_url: "images/logos/antropofago_logo.png",
+    cover_url: "images/covers/Antropofago-A_Propensity_for_Violence_Cruelty_Enslavement.jpg",
+    facebook_url: "https://www.facebook.com/antropofago.deathmetal",
+    youtube_url: "https://www.youtube.com/channel/UCXpt6YsrxhlGuHovZQ2aKrA",
+    bandcamp_url: "https://antropofago.bandcamp.com",
+    release_year: 2021,
+    credits: ['Programmation batterie', 'Mixage']
   },
   {
     name: "Leaving...",
@@ -227,13 +227,27 @@ const os_productions = [
     name: "Consumer",
     band: "Devolution",
     country: "FR",
-    link: "https://youtu.be/zqSl4bUHViY",
+    link: "https://devolution-band.com",
     genre: "Death Black Metal",
     logo_url: "images/logos/devolution_logo.png",
     cover_url: "images/covers/Devolution-Consumer.jpg",
     facebook_url: "https://www.facebook.com/devolution.band.fr",
-    youtube_url: "https://youtu.be/zqSl4bUHViY",
+    youtube_url: "https://youtu.be/-VHR17fWSZY",
     bandcamp_url: "https://devolution-band.bandcamp.com",
+    release_year: 2021,
+    credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
+  },
+  {
+    name: "Gravity Gone",
+    band: "Abyss of Mind",
+    country: "FR",
+    link: "",
+    genre: "Metalcore / Djent",
+    logo_url: "images/logos/abyss_of_mind_logo.png",
+    cover_url: "images/covers/Abyss_of_Mind-Gravity_Gone.jpg",
+    facebook_url: "https://www.facebook.com/abyssofmind",
+    youtube_url: "https://youtube.com/playlist?list=PLOxBkkMAXGufyms3d0LVhKuVctdZu-IlW",
+    bandcamp_url: "",
     release_year: 2021,
     credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
   },
