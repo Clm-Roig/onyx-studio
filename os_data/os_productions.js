@@ -251,4 +251,18 @@ const os_productions = [
     release_year: 2021,
     credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
   },
+  {
+    name: "Riddles",
+    band: "Caligula",
+    country: "FR",
+    link: "",
+    genre: "Beatdown / Deathcore",
+    logo_url: "images/logos/caligula_logo.png",
+    cover_url: "images/covers/Caligula-Riddles.jpg",
+    facebook_url: "https://www.facebook.com/CaligulaMetal",
+    youtube_url: "https://youtu.be/5Ico1R3nalY",
+    bandcamp_url: "",
+    release_year: 2021,
+    credits: ['Enregistrement chant']
+  },
 ];
