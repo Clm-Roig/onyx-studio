@@ -1743,11 +1743,13 @@ content: "/ ";
 }
 
 .home-content h1 {
-  font-family: "montserrat-bold", sans-serif;
+  color: #ffffff;
+  font-family: "montserrat", sans-serif;
   font-size: 9rem;
+  letter-spacing: 0.2rem;
   line-height: 1.1;
   margin-top: 0;
-  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .home-content h1+p {
@@ -2654,8 +2656,9 @@ h3.latest-prods {
 .full-width-3img img {
   filter: brightness(70%);
   flex: 1;
-  transition: 1s;
   min-width: 250px;
+  object-fit: cover;
+  transition: 1s;
 }
 
 /* ===================================================================
