@@ -2599,6 +2599,14 @@ h3.latest-prods {
   }
 }
 
+#test-mix {
+  display: block;
+  margin: auto;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  width: 100%;
+}
+
 /* ------------------------------------------------------------------- 
 * responsive:
 * services
