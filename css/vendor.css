@@ -1269,6 +1269,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
   display: none;
 }
 
+.slick-next {
+  overflow-x: hidden;
+}
+
 
 /* ===================================================================
  * # PhotoSwipe main CSS by Dmitry Semenov
