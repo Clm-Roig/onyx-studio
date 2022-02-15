@@ -351,7 +351,8 @@
      * ------------------------------------------------------ */
     (function clInit() {
 
-        clPreloader();
+        // Clément ROIG 15/02/2022 - Remove preloader (taking to much time)
+        // clPreloader();
         clMenuOnScrolldown();
         clOffCanvas();
         clPhotoswipe();
