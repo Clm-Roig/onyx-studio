@@ -11,7 +11,7 @@ const os_productions = [
     youtube_url: "https://www.youtube.com/watch?v=3mD6pFnvNsA",
     bandcamp_url: "",
     release_year: 2015,
-    credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
+    credits: ["Programmation batterie", "Réamping", "Mixage", "Mastering"],
   },
   {
     name: "Rites",
@@ -25,7 +25,7 @@ const os_productions = [
     youtube_url: "https://www.youtube.com/watch?v=RjrnN1vny2o",
     bandcamp_url: "https://endlessdecrepitudeprod.bandcamp.com/album/rites",
     release_year: 2016,
-    credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
+    credits: ["Programmation batterie", "Réamping", "Mixage", "Mastering"],
   },
   {
     name: "Le Naufrage",
@@ -37,9 +37,10 @@ const os_productions = [
     cover_url: "images/covers/Opprobre-Le_Naufrage.jpg",
     facebook_url: "https://www.facebook.com/opprobre",
     youtube_url: "https://www.youtube.com/watch?v=Nn0V-FKm5KY",
-    bandcamp_url: "https://endlessdecrepitudeprod.bandcamp.com/album/le-naufrage",
+    bandcamp_url:
+      "https://endlessdecrepitudeprod.bandcamp.com/album/le-naufrage",
     release_year: 2017,
-    credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
+    credits: ["Programmation batterie", "Réamping", "Mixage", "Mastering"],
   },
   {
     name: "A Propensity for Violence",
@@ -51,9 +52,10 @@ const os_productions = [
     cover_url: "images/covers/Antropofago-A_Propensity_for_Violence.jpg",
     facebook_url: "https://www.facebook.com/antropofago.deathmetal",
     youtube_url: "https://www.youtube.com/watch?v=yK160fu2cXI",
-    bandcamp_url: "https://antropofago.bandcamp.com/album/a-propensity-for-violence",
+    bandcamp_url:
+      "https://antropofago.bandcamp.com/album/a-propensity-for-violence",
     release_year: 2018,
-    credits: ['Programmation batterie', 'Mixage']
+    credits: ["Programmation batterie", "Mixage"],
   },
   /*{
       name: "Tales of Aeria A Steampunk Story",
@@ -123,7 +125,7 @@ const os_productions = [
     youtube_url: "",
     bandcamp_url: "https://croon.bandcamp.com/track/leaks",
     release_year: 2020,
-    credits: ['Mastering']
+    credits: ["Mastering"],
   },
   {
     name: "Unauthorized Surveillance (single)",
@@ -137,7 +139,7 @@ const os_productions = [
     youtube_url: "https://www.youtube.com/watch?v=l7pJzmItYak",
     bandcamp_url: "https://croon.bandcamp.com/track/unauthorized-surveillance",
     release_year: 2020,
-    credits: ['Mastering']
+    credits: ["Mastering"],
   },
   {
     name: "Paul on Acid (single)",
@@ -151,7 +153,7 @@ const os_productions = [
     youtube_url: "https://www.youtube.com/watch?v=_eklnqqGrKY",
     bandcamp_url: "https://croon.bandcamp.com/track/paul-on-acid",
     release_year: 2020,
-    credits: ['Mastering']
+    credits: ["Mastering"],
   },
   {
     name: "Them! (single)",
@@ -165,7 +167,7 @@ const os_productions = [
     youtube_url: "https://youtu.be/giGsNOgWgLc",
     bandcamp_url: "https://croon.bandcamp.com/track/them",
     release_year: 2020,
-    credits: ['Stems Mastering']
+    credits: ["Stems Mastering"],
   },
   {
     name: "Hollow Nights",
@@ -179,7 +181,7 @@ const os_productions = [
     youtube_url: "https://www.youtube.com/watch?v=WphQWBMHbO8",
     bandcamp_url: "https://thesolune.bandcamp.com/album/hollow-nights",
     release_year: 2020,
-    credits: ['Programmation batterie', 'Enregistrement', 'Mixage']
+    credits: ["Programmation batterie", "Enregistrement", "Mixage"],
   },
   {
     name: "Le Silence",
@@ -193,7 +195,7 @@ const os_productions = [
     youtube_url: "https://www.youtube.com/channel/UCJGbspYGmloMsi0RMhjXK-g",
     bandcamp_url: "https://sunnudagr.bandcamp.com/album/le-silence",
     release_year: 2020,
-    credits: ['Réamping', 'Mixage']
+    credits: ["Réamping", "Mixage"],
   },
   {
     name: "A Propensity for Violence... Cruelty Enslavement",
@@ -202,12 +204,13 @@ const os_productions = [
     link: "",
     genre: "Brutal Death Metal Technique",
     logo_url: "images/logos/antropofago_logo.png",
-    cover_url: "images/covers/Antropofago-A_Propensity_for_Violence_Cruelty_Enslavement.jpg",
+    cover_url:
+      "images/covers/Antropofago-A_Propensity_for_Violence_Cruelty_Enslavement.jpg",
     facebook_url: "https://www.facebook.com/antropofago.deathmetal",
     youtube_url: "https://www.youtube.com/channel/UCXpt6YsrxhlGuHovZQ2aKrA",
     bandcamp_url: "https://antropofago.bandcamp.com",
     release_year: 2021,
-    credits: ['Programmation batterie', 'Mixage']
+    credits: ["Programmation batterie", "Mixage"],
   },
   {
     name: "Leaving...",
@@ -221,7 +224,7 @@ const os_productions = [
     youtube_url: "https://www.youtube.com/channel/UCenEE51OAsP96eCcx2JiB5w",
     bandcamp_url: "",
     release_year: 2021,
-    credits: ['Mastering']
+    credits: ["Mastering"],
   },
   {
     name: "Consumer",
@@ -235,7 +238,7 @@ const os_productions = [
     youtube_url: "https://youtu.be/-VHR17fWSZY",
     bandcamp_url: "https://devolution-band.bandcamp.com",
     release_year: 2021,
-    credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
+    credits: ["Programmation batterie", "Réamping", "Mixage", "Mastering"],
   },
   {
     name: "Gravity Gone",
@@ -246,10 +249,11 @@ const os_productions = [
     logo_url: "images/logos/abyss_of_mind_logo.png",
     cover_url: "images/covers/Abyss_of_Mind-Gravity_Gone.jpg",
     facebook_url: "https://www.facebook.com/abyssofmind",
-    youtube_url: "https://youtube.com/playlist?list=PLOxBkkMAXGufyms3d0LVhKuVctdZu-IlW",
+    youtube_url:
+      "https://youtube.com/playlist?list=PLOxBkkMAXGufyms3d0LVhKuVctdZu-IlW",
     bandcamp_url: "",
     release_year: 2021,
-    credits: ['Programmation batterie', 'Réamping', 'Mixage', 'Mastering']
+    credits: ["Programmation batterie", "Réamping", "Mixage", "Mastering"],
   },
   {
     name: "Riddles",
@@ -263,6 +267,20 @@ const os_productions = [
     youtube_url: "https://youtu.be/5Ico1R3nalY",
     bandcamp_url: "",
     release_year: 2021,
-    credits: ['Enregistrement chant']
+    credits: ["Enregistrement chant"],
+  },
+  {
+    name: "Insight",
+    band: "Last Rampage",
+    country: "FR",
+    link: "",
+    genre: "Metal Progressif",
+    logo_url: "images/logos/last_rampage_logo.png",
+    cover_url: "images/covers/Last_Rampage-Insight.jpg",
+    facebook_url: "https://www.facebook.com/LastRampageOfficiel",
+    youtube_url: "https://www.youtube.com/c/LastRampage",
+    bandcamp_url: "",
+    release_year: 2022,
+    credits: ["Mastering"],
   },
 ];
