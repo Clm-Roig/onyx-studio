@@ -113,6 +113,7 @@ const os_productions = [
   //   release_year: 2020,
   //   credits: ['Mastering']
   // },
+  /*
   {
     name: "Leaks (single)",
     band: "Croon",
@@ -169,6 +170,7 @@ const os_productions = [
     release_year: 2020,
     credits: ["Stems Mastering"],
   },
+  */
   {
     name: "Hollow Nights",
     band: "The Solune",
