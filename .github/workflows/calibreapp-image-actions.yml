@@ -8,8 +8,8 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
 
-      - name: Image Actions
-        uses: calibreapp/image-actions@1.1.0
+      - name: Compress Images
+        uses: calibreapp/image-actions@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           jpegQuality: "100" # 0 to 100
