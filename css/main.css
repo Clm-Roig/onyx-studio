@@ -2520,7 +2520,7 @@ h3.latest-prods {
 
 .process__col {
   position: relative;
-  min-height: 24.6rem;
+  /* min-height: 24.6rem; */
 }
 
 .process__col::before {
