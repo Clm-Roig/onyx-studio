@@ -2445,7 +2445,6 @@ h3.latest-prods {
 .s-latest-prod-videos .iframe-container {
   aspect-ratio: 16/9;
   flex-basis: 40%;
-  justify-content: center;
   margin: 15px;
   position: relative;
   z-index: 1;
@@ -2463,6 +2462,7 @@ h3.latest-prods {
   height: 100%;
   width: 100%;
   position: absolute;
+  border: 0;
 }
 
 @media only screen and (max-width: 1000px) {
