@@ -7,7 +7,6 @@ function replaceInLogoTemplate(production) {
     return "";
   }
   final_brick = os_logo_brick_template;
-  console.log(production);
   final_brick = final_brick.replace("$$logo_url$$", production.logo_url);
   final_brick = final_brick.replace("$$logo_alt$$", `${production.band} logo`);
   return final_brick;

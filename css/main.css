@@ -3513,6 +3513,8 @@ p.contact-text {
 }
 
 .contact-main {
+  align-items: center;
+  display: flex;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
