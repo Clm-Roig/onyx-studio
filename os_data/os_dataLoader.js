@@ -11,12 +11,13 @@ class DataLoader {
   loadRandomProductions() {
     this.random_productions = []
     let production_tmp = os_productions
-      .map(x => ({
-        x,
-        r: Math.random()
+      .filter((production) => !!production.cover_url)
+      .map(production => ({
+        production,
+        randomOrder: Math.random()
       }))
-      .sort((a, b) => a.r - b.r)
-      .map(a => a.x)
+      .sort((a, b) => a.randomOrder - b.randomOrder)
+      .map(a => a.production)
       .slice(0, this.nbRandomsProds);
     production_tmp.forEach((prod) => {
       this.random_productions += replaceInProdTemplate(prod)
