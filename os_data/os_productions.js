@@ -299,4 +299,18 @@ const os_productions = [
     release_year: 2024,
     credits: ["Réamping", "Mix", "Mastering"],
   },
+  {
+    name: "Alfred",
+    band: "Gluttonous",
+    country: "FR",
+    link: "",
+    genre: "Slam Death Metal",
+    logo_url: "images/logos/gluttonous_logo.png",
+    cover_url: "images/covers/Gluttonous-Alfred.jpg",
+    facebook_url: "https://www.facebook.com/gluttonous.slam",
+    youtube_url: "https://www.youtube.com/@Gluttonous-slam",
+    bandcamp_url: "https://gluttonous-slam.bandcamp.com/album/alfred",
+    release_year: 2024,
+    credits: ["Programmation batterie", "Réamping", "Mixage", "Mastering"],
+  },
 ];
