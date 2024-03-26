@@ -2810,7 +2810,7 @@ h3.latest-prods {
 }
 
 .full-width-3img img {
-  filter: brightness(70%);
+  filter: brightness(90%);
   flex: 1;
   min-width: 250px;
   object-fit: cover;
@@ -3507,7 +3507,8 @@ h3.latest-prods {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-p.contact-text, p.contact-text-small {
+p.contact-text,
+p.contact-text-small {
   color: #ffffff;
   font-size: 2.5rem;
 }
