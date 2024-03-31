@@ -313,4 +313,18 @@ const os_productions = [
     release_year: 2024,
     credits: ["Programmation batterie", "Réamping", "Mixage", "Mastering"],
   },
+  {
+    name: "Bonnie",
+    band: "Gluttonous",
+    country: "FR",
+    link: "",
+    genre: "Slam Death Metal",
+    logo_url: "images/logos/gluttonous_logo.png",
+    cover_url: "images/covers/Gluttonous-Bonnie.jpg",
+    facebook_url: "https://www.facebook.com/gluttonous.slam",
+    youtube_url: "https://www.youtube.com/@Gluttonous-slam",
+    bandcamp_url: "https://gluttonous-slam.bandcamp.com/album/bonnie",
+    release_year: 2024,
+    credits: ["Programmation batterie", "Réamping", "Mixage", "Mastering"],
+  },
 ];
