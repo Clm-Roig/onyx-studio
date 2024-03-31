@@ -286,7 +286,7 @@ const os_productions = [
     credits: ["Mastering"],
   },
   {
-    name: "Insight",
+    name: "Between Bright and Pitch Black",
     band: "Blind Wisdom",
     country: "FR",
     link: "",
