@@ -327,4 +327,18 @@ const os_productions = [
     release_year: 2024,
     credits: ["Programmation batterie", "Réamping", "Mixage", "Mastering"],
   },
+  {
+    name: "The Demiurge",
+    band: "Antropofago",
+    country: "FR",
+    link: "https://antropofago.bandcamp.com/album/the-demiurge",
+    genre: "Brutal Death Metal Technique",
+    logo_url: "images/logos/antropofago_logo.png",
+    cover_url: "images/covers/Antropofago-The_Demiurge.jpg",
+    facebook_url: "https://www.facebook.com/antropofago.deathmetal",
+    youtube_url: "",
+    bandcamp_url: "https://antropofago.bandcamp.com/album/the-demiurge",
+    release_year: 2024,
+    credits: ["Mixage", "Mastering"],
+  },
 ];
