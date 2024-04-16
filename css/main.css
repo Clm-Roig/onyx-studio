@@ -1881,6 +1881,7 @@ content: "/ ";
 }
 
 #logo_top {
+  border: 1px solid #dddddd;
   position: absolute;
   top: 3rem;
   left: 3rem;
