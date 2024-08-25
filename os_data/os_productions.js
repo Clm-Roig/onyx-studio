@@ -341,4 +341,19 @@ const os_productions = [
     release_year: 2024,
     credits: ["Mixage", "Mastering"],
   },
+  {
+    name: "Echoes of Ancestral Battles",
+    band: "Gallic Hammer",
+    country: "CH",
+    link: "https://gallichammer.bandcamp.com/album/echoes-of-ancestral-battles",
+    genre: "Black Épique",
+    logo_url: "images/logos/gallic_hammer_logo.png",
+    cover_url: "images/covers/Gallic_Hammer-Echoes_of_Ancestral_Battles.jpg",
+    facebook_url: "https://www.facebook.com/GallicHammer",
+    youtube_url: "",
+    bandcamp_url:
+      "https://gallichammer.bandcamp.com/album/echoes-of-ancestral-battles",
+    release_year: 2024,
+    credits: ["Mixage", "Mastering"],
+  },
 ];
