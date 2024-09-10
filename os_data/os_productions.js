@@ -356,4 +356,18 @@ const os_productions = [
     release_year: 2024,
     credits: ["Mixage", "Mastering"],
   },
+  {
+    name: "L'Absolution",
+    band: "Devolution",
+    country: "FR",
+    link: "https://devolution-band.bandcamp.com/album/labsolution",
+    genre: "Death Black Metal",
+    logo_url: "images/logos/devolution_logo.png",
+    cover_url: "images/covers/Devolution-L_Absolution.jpg",
+    facebook_url: "https://www.facebook.com/devolution.band.fr/",
+    youtube_url: "",
+    bandcamp_url: "https://devolution-band.bandcamp.com/album/labsolution",
+    release_year: 2024,
+    credits: ["Réamping", "Mixage", "Mastering"],
+  },
 ];
