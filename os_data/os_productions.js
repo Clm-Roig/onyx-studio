@@ -370,4 +370,18 @@ const os_productions = [
     release_year: 2024,
     credits: ["Réamping", "Mixage", "Mastering"],
   },
+  {
+    name: "Evil for Evil",
+    band: "Dvm Spero",
+    country: "FR",
+    link: "https://linktr.ee/dvmspero",
+    genre: "Groove Metal",
+    logo_url: "images/logos/dvm_spero_logo.png",
+    cover_url: "images/covers/DVM_Spero-Evil_for_Evil.jpg",
+    facebook_url: "https://www.facebook.com/dvmspero.band",
+    youtube_url: "https://www.youtube.com/@DVMSPERO",
+    bandcamp_url: "",
+    release_year: 2024,
+    credits: ["Réamping", "Mixage", "Mastering"],
+  },
 ];
