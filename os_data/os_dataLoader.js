@@ -1,53 +1,57 @@
 class DataLoader {
   constructor() {
-    // CONST 
-    this.nbRandomsProds = 99999 // load all prods 
-    this.loadRandomProductions()
-    this.nbRandomsLogos = 9999 // load all logos
-    this.loadRandomLogos()
-    document.getElementById('nbProds').innerHTML = os_productions.length;
+    // CONST
+    this.nbRandomsProds = 99999; // load all prods
+    this.loadRandomProductions();
+    this.nbRandomsLogos = 9999; // load all logos
+    this.loadRandomLogos();
+    document.getElementById("nbProds").innerHTML = os_productions.length;
   }
 
   loadRandomProductions() {
-    this.random_productions = []
+    this.random_productions = [];
     let production_tmp = os_productions
       .filter((production) => !!production.cover_url)
-      .map(production => ({
+      .map((production) => ({
         production,
-        randomOrder: Math.random()
+        randomOrder: Math.random(),
       }))
       .sort((a, b) => a.randomOrder - b.randomOrder)
-      .map(a => a.production)
+      .map((a) => a.production)
       .slice(0, this.nbRandomsProds);
     production_tmp.forEach((prod) => {
-      this.random_productions += replaceInProdTemplate(prod)
-    })
-    document.getElementById("productions-carousel").innerHTML = this.random_productions
+      this.random_productions += replaceInProdTemplate(prod);
+    });
+    document.getElementById("productions-carousel").innerHTML =
+      this.random_productions;
   }
 
   loadRandomLogos() {
-    this.random_logosHTML = []
-    let productionsToUse = []
+    this.random_logosHTML = [];
+    let productionsToUse = [];
     let production_tmp = os_productions
-      .map(x => ({
+      .map((x) => ({
         x,
-        r: Math.random()
+        r: Math.random(),
       }))
       .sort((a, b) => a.r - b.r)
-      .map(a => a.x)
+      .map((a) => a.x);
 
     production_tmp.forEach((prod) => {
-      if (prod.logo_url !== "" && !productionsToUse.find((p) => p.band === prod.band)) {
-        productionsToUse.push(prod)
+      if (
+        !!prod.logo_url &&
+        !productionsToUse.find((p) => p.band === prod.band)
+      ) {
+        productionsToUse.push(prod);
       }
-    })
+    });
 
-    productionsToUse = productionsToUse.slice(0, this.nbRandomsLogos)
+    productionsToUse = productionsToUse.slice(0, this.nbRandomsLogos);
     productionsToUse.forEach((prod) => {
-      this.random_logosHTML += replaceInLogoTemplate(prod)
-    })
-    document.getElementById("logosSample").innerHTML = this.random_logosHTML
+      this.random_logosHTML += replaceInLogoTemplate(prod);
+    });
+    document.getElementById("logosSample").innerHTML = this.random_logosHTML;
   }
 }
 
-os_data = new DataLoader()
+os_data = new DataLoader();

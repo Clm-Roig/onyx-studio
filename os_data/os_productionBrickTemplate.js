@@ -35,7 +35,7 @@ function replaceInProdTemplate(production) {
   keys = Object.keys(production);
   keys.map((key) => {
     value = production[key];
-    if (value != "") {
+    if (!!value) {
       if (key == "youtube_url") {
         value = getYoutubeLink(value);
         final_brick = final_brick.replace("$$youtube_link$$", value);
@@ -59,7 +59,7 @@ function replaceInProdTemplate(production) {
     // Handle null values
     else {
       if (key == "cover_url") {
-        if (production["logo_url"] != "")
+        if (!!production["logo_url"])
           final_brick = final_brick.replace(
             "$$cover_url$$",
             production["logo_url"]
