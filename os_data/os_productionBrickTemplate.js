@@ -59,16 +59,17 @@ function replaceInProdTemplate(production) {
     // Handle null values
     else {
       if (key == "cover_url") {
-        if (!!production["logo_url"])
+        if (!!production["logo_url"]) {
           final_brick = final_brick.replace(
             "$$cover_url$$",
             production["logo_url"]
           );
-        else
+        } else {
           final_brick = final_brick.replace(
             "$$cover_url$$",
             "images/covers/no_image.png"
           );
+        }
       }
       if (key == "release_year") {
         final_brick = final_brick.replace("($$release_year$$)", "");
