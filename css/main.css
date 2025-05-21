@@ -1396,8 +1396,8 @@ input::-moz-focus-inner {
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   color: var(--main-color);
-  margin-top: 0;
-  margin-bottom: 2.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /*
@@ -3512,6 +3512,11 @@ h3.latest-prods {
   position: relative;
 }
 
+.s-contact-content {
+  backdrop-filter: brightness(0.3);
+  padding: 2rem 0;
+}
+
 .s-contact a:hover,
 .s-contact a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -3521,6 +3526,8 @@ p.contact-text,
 p.contact-text-small {
   color: #ffffff;
   font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 p.contact-text-small {
@@ -3531,8 +3538,8 @@ p.contact-text-small {
 .contact-main {
   align-items: center;
   display: flex;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .contact-email {
@@ -3573,7 +3580,6 @@ p.contact-text-small {
   font-family: "metropolis-regular", sans-serif;
   font-size: 2.8rem;
   line-height: 1.607;
-  margin-top: 2.4rem;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3788,7 +3794,7 @@ p.contact-text-small {
     padding-top: 7rem;
   }
   .contact-main {
-    margin-top: 6.5rem;
+    margin-top: 2.5rem;
   }
   .contact-email {
     font-size: 5rem;
@@ -3866,7 +3872,7 @@ p.contact-text-small {
     padding-bottom: 6rem;
   }
   .contact-main {
-    margin-top: 8rem;
+    margin-top: 1.5rem;
   }
   .contact-email {
     font-size: 3rem;
@@ -3913,7 +3919,7 @@ p.contact-text-small {
     padding-bottom: 3rem;
   }
   .contact-main {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
   .contact-secondary {
     padding: 0;
