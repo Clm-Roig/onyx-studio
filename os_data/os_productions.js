@@ -461,7 +461,7 @@ const os_productions = [
     link: null,
     genre: "Neo Metal",
     logo_url: "images/logos/slender_logo.png",
-    cover_url: null,
+    cover_url: "images/covers/Slender-Slender.jpg",
     facebook_url: "https://www.facebook.com/profile.php?id=61579148024121",
     youtube_url: null,
     bandcamp_url: null,
